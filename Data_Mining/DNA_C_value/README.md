@@ -1,5 +1,5 @@
 
-# Selenium C-values Scraper
+# Selenium C-values Crawler & scraper
 
 This Python script uses Selenium to scrape plant C-value data from [Kew’s C-values database](https://cvalues.science.kew.org/search).
 
