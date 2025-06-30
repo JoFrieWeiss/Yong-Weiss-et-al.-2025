@@ -1,8 +1,0 @@
-# Python Module and Package Setup on HPC
-
-To use Python on the HPC system, follow these steps:
-
-1. **Check available Python modules**
-
-```bash
-module avail python
