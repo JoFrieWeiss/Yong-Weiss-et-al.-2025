@@ -2,7 +2,7 @@
 # Selenium C-values Crawler & scraper
 
 This Python script uses Selenium to scrape plant C-value data from [Kew’s C-values database](https://cvalues.science.kew.org/search).
-This Python script uses Selenium to scrape metazoa C-value data from [).
+This Python script uses Selenium to scrape metazoa C-value data from (https://www.genomesize.com/search.php).
 
 ## Features
 - Opens the website using Safari WebDriver.
@@ -27,5 +27,5 @@ This Python script uses Selenium to scrape metazoa C-value data from [).
    ```bash
    python cvalues_selenium_scraper.py
    ```
-3. Data will be saved as `C_values_Viridiplantae.xlsx` in the current folder.
+3. Data will be saved as `XXXXXX.xlsx` in the current folder.
 4. Debug screenshots are saved throughout to help monitor progress.
