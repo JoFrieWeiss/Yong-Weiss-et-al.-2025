@@ -6,10 +6,3 @@ To use Python on the HPC system, follow these steps:
 
 ```bash
 module avail python
-```
-2. **Load the desired Python version**
-
-```bash
-module load python/3.10.4
-```
-
