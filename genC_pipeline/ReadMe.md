@@ -1,18 +1,21 @@
-HPC-Optimized Pipeline for Biomass Modeling
+# HPC-Optimized Pipeline for Biomass Modeling
 This repository contains a series of R scripts designed to process raw eDNA analysis data from sediment cores and convert it into biomass estimates. The pipeline is optimized for execution on a High-Performance Computing (HPC) cluster, leveraging parallel processing to significantly reduce computation time.
 
-Pipeline Overview
+# Pipeline Overview
 The workflow is divided into three main stages to achieve maximum efficiency on a cluster:
-Stage 1: Parallel Pre-processing (01_run_preprocessing.R)
+
+#Stage 1: Parallel Pre-processing (01_run_preprocessing.R)
 This script processes the raw data (MergedData.RData) for a single sediment core.
 It calculates the percentage abundance of various taxonomic groups (bacteria, fungi, plants, etc.) based on habitat and classification rules.
 Goal: This computationally intensive step is run as a job array on the HPC cluster, allowing all cores to be processed simultaneously and independently.
-Stage 2: Combining Results (02_combine_preprocessing.R)
+
+#Stage 2: Combining Results (02_combine_preprocessing.R)
 This script is executed once after all jobs from Stage 1 have completed successfully.
 It gathers the intermediate results from all cores and merges them into a single, comprehensive CSV file.
 It then calculates the DNA weights (..._Start_wt) based on concentration data from the Complex DNA information.csv file.
 Goal: To create a clean, complete input file for the final biomass modeling stage.
-Stage 3: Parallel Biomass Modeling (03_run_biomass_model.R)
+
+#Stage 3: Parallel Biomass Modeling (03_run_biomass_model.R)
 This script reads the combined file from Stage 2 and calculates the biomass permutations for a single sediment core.
 It uses a cross_join to model all possible biomass values based on the uncertainties in DNA and biomass-per-cell values.
 Goal: This intensive step is also run as a job array in parallel for all cores to generate the final results quickly.
