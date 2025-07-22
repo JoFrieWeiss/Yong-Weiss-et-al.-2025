@@ -1,4 +1,4 @@
-# HPC-Optimized Pipeline for Biomass Modeling
+# HPC-Optimized Biomass Modeling using the genC pipeline
 This repository contains a series of R scripts designed to process raw eDNA analysis data from sediment cores and convert it into biomass estimates. The pipeline is optimized for execution on a High-Performance Computing (HPC) cluster, leveraging parallel processing to significantly reduce computation time.
 
 # Pipeline Overview
