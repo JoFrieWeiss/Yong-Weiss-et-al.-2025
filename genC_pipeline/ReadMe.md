@@ -1,5 +1,5 @@
 # HPC-Optimized Biomass Modeling using the genC pipeline
-This repository contains a series of R scripts designed to process raw eDNA analysis data from sediment cores and convert it into biomass estimates. The pipeline is optimized for execution on a High-Performance Computing (HPC) cluster, leveraging parallel processing to significantly reduce computation time.
+This repository contains a series of R scripts designed to process Holi analysed sedaDNA analysis data (see github repo: https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025-HOLI) from sediment cores and convert it into biomass estimates. The pipeline is optimized for execution on a High-Performance Computing (HPC) cluster, leveraging parallel processing to significantly reduce computation time.
 
 # Pipeline Overview
 The workflow is divided into three main stages to achieve maximum efficiency on a cluster:
@@ -35,7 +35,7 @@ Adjust Paths (IMPORTANT): Open each of the three R scripts and modify the BASE_D
 # Example in 01_run_preprocessing.R, 02_..., and 03_...
 BASE_DIR <- "/path/to/your/project/on/hpc"
 
-Data Structure: Make sure your raw data and configuration files are located in the subdirectories as defined in the SITES_CONFIG list in 01_run_preprocessing.R (e.g., 1_ilirney Lake/, A_aquatic_terrestrial/, etc.).
+Data Structure: Make sure your raw data and configuration files are located in the subdirectories as defined in the SITES_CONFIG list in 01_run_preprocessing.R (e.g., 1_corename/, A_aquatic_terrestrial/, etc.).
 Execution on a SLURM Cluster
 The included run_hpc.sh script is designed for the SLURM job scheduler. The execution is performed in three steps.
 Start Stage 1 (Pre-processing):
