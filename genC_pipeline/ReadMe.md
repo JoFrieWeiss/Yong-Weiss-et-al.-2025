@@ -1,6 +1,6 @@
 # genC Pipeline
 
-OC<sub>DNA projected</sub> Estimation from Sedimentary Ancient DNA (sedaDNA)  
+OC<sub>DNA projected</sub> estimation from Sedimentary Ancient DNA (sedaDNA)  
 This R pipeline estimates group-specific OC<sub>DNA projected</sub> (e.g., aquatic, terrestrial, viruses) from sedimentary ancient DNA (sedaDNA) using DNA weight proportions and conversion values per cell.
 
 ---
