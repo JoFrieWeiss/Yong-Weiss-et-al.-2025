@@ -4,7 +4,7 @@ This R pipeline automates the processing and calculation of DNA and sediment dat
 ---
 # PART 1
 
-# 1.1 Bacteria/Archaea Species Habitat Classification Script
+## 1.1 Bacteria/Archaea Species Habitat Classification Script
 
 ## Overview  
 This script performs habitat classification and relative abundance calculations for bacterial species from sediment core DNA data. It integrates taxonomic read counts with habitat metadata obtained from data mining scripts.
