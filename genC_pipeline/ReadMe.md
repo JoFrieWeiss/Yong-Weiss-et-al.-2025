@@ -7,8 +7,12 @@ This R pipeline estimates group-specific biomass (e.g., aquatic, terrestrial, vi
 
 ## Important
 
-**Before running the genC pipeline, you must first run the `pre_genC_pipeline`** to generate the required input file `Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`.  
-The pre_genC pipeline processes raw DNA and habitat data and prepares the DNA weight proportions used here.
+**Before running the `genC_pipeline`, you must first run the [`pre_genC_pipeline`](../pre_genC_pipeline/)**  
+to generate the required input file `Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`.
+
+The `pre_genC_pipeline` processes raw DNA read counts and habitat data, calculates DNA weight proportions,  
+and outputs the formatted input needed to run biomass estimations in this pipeline.
+
 
 ---
 
