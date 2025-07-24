@@ -16,8 +16,9 @@ This script performs habitat classification and relative abundance calculations 
   Please update the path to your own `.RData` file containing merged data.  
 
 - **Updated species list with habitat metadata**  
-  Contains species-level habitat classification information scraped and processed using data mining scripts (e.g., isolation source info from databases).  
+  Contains species-level habitat classification information scraped and processed using data mining scripts [`/scripts/data_mining/`](./scripts/data_mining/) (e.g., isolation source info from databases).  
   Please update the path to your own CSV file containing the updated species list.
+  
 
 ## Workflow
 
