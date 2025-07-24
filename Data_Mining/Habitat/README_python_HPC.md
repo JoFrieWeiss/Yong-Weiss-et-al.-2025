@@ -42,3 +42,7 @@ pip install --user pandas beautifulsoup4 requests
 This will ensure you have the necessary Python environment and packages for your work.
 
 6. **Now use a shell script to start your scraping script on the HPC**
+
+
+**Author:** Josefine Friederike Weiß
+**Date:** 2025
