@@ -1,4 +1,4 @@
-# Yong-Weiss-et-al.-2025
+# Yong & Weiß et al., 2025
 
 This repository contains all scripts and pipelines for the analyses presented in:
 ---
