@@ -6,43 +6,6 @@ This repository contains a single, unified R script (`master_pipeline.R`) that p
 
 The entire workflow is automated within this single script, progressing from raw input files to a final, analysis-ready summary table.
 
----
-[ALL RAW INPUTS]
-  - MergedData.RData files
-  - Bacteria/Archaea habitat .csv files
-  - Eukaryote habitat .xlsx file
-      |
-      V
-+-------------------------------------------------------------+
-| WORKFLOW STEP 1: Prepare & Classify Prokaryotes             |
-| (A loop runs for Bacteria & Archaea for each core)          |
-+-------------------------------------------------------------+
-      |
-      V
-[INTERMEDIATE FILES (saved to disk)] <-- The Bridge
-  - Ilirney_classified_Bacteria.csv
-  - Salmon_classified_Bacteria.csv
-  - ... etc. for all cores & prokaryote kingdoms
-      |
-      V
-+-------------------------------------------------------------+
-| WORKFLOW STEP 2: Aggregate Analysis for ALL Kingdoms        |
-| (A loop runs for each core)                                 |
-|                                                             |
-|   Internal Logic:                                           |
-|   1. Loads the core's MergedData.                           |
-|   2. Processes Eukaryotes using the .xlsx database.         |
-|   3. Loads the appropriate intermediate file from Step 1    |
-|      to process Prokaryotes.                                |
-|   4. Calculates percentages for all groups.                 |
-|   5. Combines results for the core.                         |
-+-------------------------------------------------------------+
-      |
-      V
-[FINAL OUTPUT]
-  - COMPLETE_ANALYSIS_SUMMARY.csv
-    (A single file with all results from all cores)
-    
 ## Features
 
 * **All-in-One Execution**: Runs the entire workflow from start to finish with a single command.
