@@ -3,7 +3,7 @@
 # COMPLETE UNIFIED ANALYSIS PIPELINE FOR SEDADNA HABITAT ANALYSIS
 #
 # DESCRIPTION:
-# This single, master script performs the entire analysis workflow.
+# This single, main script performs the entire analysis workflow.
 # It is designed to be run from top to bottom.
 #
 # =============================================================================
