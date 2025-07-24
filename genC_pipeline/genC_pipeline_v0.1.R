@@ -2,6 +2,25 @@
 ################################################################################
 ############################# genC pipeline ####################################
 ################################################################################
+# genC_pipeline.R
+#
+# OC DNA projected Calculation Pipeline from DNA Weight Data
+#
+# This script processes DNA weight data for multiple sediment cores,
+# distributes unclassified DNA proportions into classified groups,
+# calculates OC DNA projected values for different organism groups based on per-cell biomass parameters,
+# and saves the biomass output for each core as separate CSV files.
+#
+# The pipeline:
+# - Loads DNA weight and per-cell biomass data,
+# - Normalizes and distributes unclassified DNA weights proportionally,
+# - Calculates OC DNA projected values per group using predefined organism-specific parameters,
+# - Iterates through all specified sediment cores,
+# - Outputs processed OC DNA projected data for further analyses.
+#
+# Author: Zijuan Yong, Josefine Friederike Weiß
+# Date: 2025-07-24
+
 
 # Required Libraries
 library(dplyr)
