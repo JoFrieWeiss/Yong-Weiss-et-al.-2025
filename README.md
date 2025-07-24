@@ -21,9 +21,8 @@ Make sure to complete this step to generate the necessary input files used in th
 - `Data_Mining/Habitat/`: Scripts for scraping species-level habitat metadata (e.g., from BacDive).
 - `genC_pipeline/`: Pipeline to estimate group-specific DNA-based biomass and carbon from sedaDNA.
   - `pre_genC_pipeline/`: Preprocessing to calculate DNA weights and prepare habitat proportions.
-- `Habitat_Classification/`: Scripts to classify taxa into habitat types using isolation metadata and ratios.
-- `Taxonomic_Assignment/`: Scripts to process sedaDNA taxonomic data (e.g., from HOLI).
-- `Metadata/`: Supplementary species metadata (e.g., BacDive URLs, isolation source info).
+    - `Habitat_Classification/`: Scripts to classify taxa into habitat types using isolation metadata and ratios.
+    - `Taxonomic_Assignment/`: Scripts to process sedaDNA taxonomic data (e.g., from HOLI).
 
 ---
 
