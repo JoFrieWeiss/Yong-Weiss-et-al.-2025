@@ -6,6 +6,16 @@ Zijuan Yong<sup>+</sup>, Josefine Friederike Weiß<sup>+</sup>, Kathleen R. Stoo
 Quantitative contribution of major organism groups to lake organic carbon burial since the last glacial inferred from sedimentary ancient DNA
 ---
 
+## Important prerequisites
+
+Before using the scripts here, raw sequencing data must first be processed with the **HOLI pipeline**, which performs taxonomic assignment and data preprocessing.
+
+You can find the HOLI pipeline and related documentation here:
+
+- **HOLI pipeline repository:** [JoFrieWeiss/Yong-Weiss-et-al.-2025-HOLI](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025-HOLI)
+
+Make sure to complete this step to generate the necessary input files used in the current analysis pipelines.
+
 ## Repository Structure
 
 - `Data_Mining/Habitat/`: Scripts for scraping species-level habitat metadata (e.g., from BacDive).
