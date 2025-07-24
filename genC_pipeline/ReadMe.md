@@ -7,14 +7,12 @@ This R pipeline estimates group-specific OC<sub>DNA projected</sub> (e.g., aquat
 
 ## Important
 
-**Before running the `genC_pipeline`, you must first run the [`pre_genC_pipeline`](./pre_genC_pipeline/)**  
-to generate the required input file: [`Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv)
-
+**Before running the `genC_pipeline`, you must first run the [`pre_genC_pipeline`](./pre_genC_pipeline/)  
+to generate the required input file: [`Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv)** 
 
 The `pre_genC_pipeline` processes raw sedaDNA read counts and habitat classification metadata  
 to calculate group-specific DNA weight proportions (e.g., aquatic, terrestrial, viruses),  
 which are required as input for this OC<sub>DNA projected</sub> estimation workflow.
-
 
 ---
 
@@ -27,7 +25,7 @@ The pipeline includes the following main steps:
 
 2. **Data Input**  
    - Main sedaDNA file: contains relative DNA weights for different organism groups across sediment cores (output from pre_genC_pipeline).
-   - Cell-specific conversion table: average DNA weight and Organic carbon content per cell for various organism types.
+   - Cell-specific conversion table: average DNA weight and Organic carbon content per cell for various organism types. This data table can be found here: 
 
 3. **Preprocessing**  
    - Calculates total DNA per group (aquatic, terrestrial, viruses).
