@@ -79,7 +79,7 @@ create_start_wt_columns <- function(df, pct_cols) {
 # File paths - adjust these paths before running
 dna_info_path <- "/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/Complex DNA information.csv"
 habitat_data_path <- "/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/combine_habitat_percentage_aqu_ter_fre_unclassfied_new.csv"
-output_path <- "/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/results_from_script/Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new_fine.csv"
+output_path <- "/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/results_from_script/Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv"
 
 # Load datasets
 dna_info <- load_csv(dna_info_path)
