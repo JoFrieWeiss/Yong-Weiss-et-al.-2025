@@ -38,7 +38,7 @@ It automatically loads relevant `.RData` files, links taxonomic data to habitat 
 - `*.RData` files for each sediment core as results from the HOLI pipeline(The full pipeline and data files are available on GitHub:  
 [JoFrieWeiss / Yong-Weiss-et-al.-2025-HOLI](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025-HOLI))
 - Habitat classification CSV files for Bacteria and Archaea
-- Eukaryota database [`final_results_eukaryota_excel-4.xlsx`] (https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/pre_genC_pipeline/Plant_Family_Type.csv)final_results_eukaryota_excel-4.xlsx
+- Eukaryota database [`final_results_eukaryota_excel-4.xlsx`] (https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/pre_genC_pipeline/final_results_eukaryota_excel-4.xlsx)
 - Plant family classification table [`Plant_Family_Type.csv`](`[Plant_Family_Type.csv](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/pre_genC_pipeline/Plant_Family_Type.csv)`)
 
 ### Output folders:
