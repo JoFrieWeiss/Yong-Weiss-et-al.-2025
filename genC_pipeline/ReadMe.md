@@ -8,7 +8,7 @@ This R pipeline estimates group-specific OC<sub>DNA projected</sub> (e.g., aquat
 ## Important
 
 **Before running the `genC_pipeline`, you must first run the [`pre_genC_pipeline`](./pre_genC_pipeline/)**  
-to generate the required input file:  `Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`
+to generate the required input file:  [`Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv`](./genC_pipeline/)
 
 The `pre_genC_pipeline` processes raw sedaDNA read counts and habitat classification metadata  
 to calculate group-specific DNA weight proportions (e.g., aquatic, terrestrial, viruses),  
