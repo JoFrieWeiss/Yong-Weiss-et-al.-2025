@@ -50,3 +50,7 @@ python bacdive_scraping_v2.1.py
 ---
 
 Feel free to modify batch size, timeout, or columns to extract based on your needs.
+
+
+**Author:** Josefine Friederike Weiß
+**Date:** 2025
