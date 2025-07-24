@@ -25,7 +25,8 @@ The pipeline includes the following main steps:
 
 2. **Data Input**  
    - Main sedaDNA file: contains relative DNA weights for different organism groups across sediment cores (output from pre_genC_pipeline).
-   - Cell-specific conversion table: average DNA weight and Organic carbon content per cell for various organism types. This data table can be found here: 
+   - Cell-specific conversion table: average DNA weight and Organic carbon content per cell for various organism types. This data table can be found here:
+       **[`values_per_cell.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/values_per_cell.csv)** 
 
 3. **Preprocessing**  
    - Calculates total DNA per group (aquatic, terrestrial, viruses).
