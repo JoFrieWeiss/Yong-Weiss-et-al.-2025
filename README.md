@@ -19,7 +19,7 @@ Make sure to complete this step to generate the necessary input files used in th
 ## Repository Structure
 
 - [`Data_Mining/Habitat/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Data_Mining/Habitat): Scripts for scraping species-level habitat metadata (e.g., from BacDive).
-- `genC_pipeline/`: Pipeline to estimate group-specific DNA-based biomass and carbon from sedaDNA.
+- [`genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/genC_pipeline): Pipeline to estimate group-specific DNA-based biomass and carbon from sedaDNA.
   - `pre_genC_pipeline/`: Preprocessing to calculate DNA weights and prepare habitat proportions.
     - `Habitat_Classification/`: Scripts to classify taxa into habitat types using isolation metadata and ratios.
     - `Taxonomic_Assignment/`: Scripts to process sedaDNA taxonomic data (e.g., from HOLI).
