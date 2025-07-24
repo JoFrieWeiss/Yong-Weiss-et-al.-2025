@@ -12,7 +12,7 @@ to generate the required input file:  `Processed_DNA_habitat_percentage_aqu_ter_
 
 The `pre_genC_pipeline` processes raw sedaDNA read counts and habitat classification metadata  
 to calculate group-specific DNA weight proportions (e.g., aquatic, terrestrial, viruses),  
-which are required as input for this biomass estimation workflow.
+which are required as input for this OC<sub>DNA projected</sub> estimation workflow.
 
 
 ---
