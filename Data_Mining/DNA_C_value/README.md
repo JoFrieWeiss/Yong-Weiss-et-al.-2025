@@ -29,3 +29,6 @@ This Python script uses Selenium to scrape metazoa C-value data from [Genome Siz
    ```
 3. Data will be saved as `XXXXXX.xlsx` in the current folder.
 4. Debug screenshots are saved throughout to help monitor progress.
+
+**Author:** Josefine Friederike Weiß
+**Date:** 2025
