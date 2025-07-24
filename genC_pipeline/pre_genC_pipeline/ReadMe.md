@@ -2,7 +2,7 @@
 
 This R pipeline automates the processing and calculation of DNA and sediment data from multiple raw input files. It merges datasets, converts relevant columns to numeric types, computes various derived metrics, and generates a fully processed output table with key DNA and habitat-related values.
 ---
-### PART 1 ###
+# PART 1
 
 # 1.1 Bacteria/Archaea Species Habitat Classification Script
 
@@ -52,7 +52,7 @@ This script performs habitat classification and relative abundance calculations 
 ## 1.2 Eukaryota/Fungi/Metazoa Habitat Classification Script
 
 
-### PART 2 ###
+# PART 2 
 ## Overview
 
 The pipeline performs the following key steps:
