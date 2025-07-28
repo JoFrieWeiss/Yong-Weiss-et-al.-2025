@@ -39,5 +39,5 @@ Make sure to complete this step to generate the necessary input files used in th
 - All paths need to be adjusted to your local system.
 - The project uses R and Python. See individual subfolder README files for further details.
 
-## Author of Repository: Josefine Friederike Weiß 
+## Author of Repository: Josefine Friederike Weiß & Zijuan Yong
 ## Contact: Josefine-Friederike.Weiss@awi.de
