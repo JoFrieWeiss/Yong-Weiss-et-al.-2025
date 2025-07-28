@@ -2,13 +2,10 @@
 
 ## Description
 
-This project analyzes lake sediment core data to explore the relationships between organic carbon (OC) burial, biomass composition, and environmental factors over time. The primary R script (`analysis_script.R`) processes the data, performs statistical analyses (PCA, RDA, LMM), and generates a series of figures to visualize the findings.
+This project analyzes lake sediment core data to explore the relationships between organic carbon (OC) burial, biomass composition, and environmental factors over time. The project contains two main R scripts:
 
-The key analyses include:
--   Comparing Total Organic Carbon (TOC) with DNA-projected OC.
--   Visualizing the burial rates of total, aquatic, and terrestrial biomass.
--   Tracking the changing composition of taxonomic groups (e.g., bacteria, algae, plants) over the last 60,000 years.
--   Modeling the environmental drivers of OC burial rates.
+1.  **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)**: This script focuses on data processing, exploration, and the generation of all primary and supplementary figures for publication.
+2.  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)**: This script is dedicated to performing focused multivariate statistical analyses, including Redundancy Analysis (RDA) and Principal Component Analysis (PCA).
 
 ---
 
@@ -17,9 +14,14 @@ The key analyses include:
 To run this analysis, you will need:
 -   **R** (version 4.0 or later recommended)
 -   **RStudio** (recommended for easier project management)
--   The following R packages. You can install them by running this command in your R console:
+-   The following R packages. You can install all of them by running this command in your R console:
     ```R
-    install.packages(c("tidyverse", "reshape2", "cowplot", "patchwork", "scales", "vegan", "lmerTest", "effects", "mgcv", "devtools", "RColorBrewer", "ggrepel", "ggtext", "png", "grid"))
+    # This command installs all packages needed for both scripts
+    install.packages(c(
+        "tidyverse", "reshape2", "cowplot", "patchwork", "scales", 
+        "vegan", "lmerTest", "effects", "mgcv", "devtools", 
+        "RColorBrewer", "ggrepel", "ggtext", "png", "grid"
+    ))
     
     # The 'corit' package needs to be installed from GitHub
     devtools::install_github("EarthSystemDiagnostics/corit")
@@ -31,50 +33,46 @@ To run this analysis, you will need:
 
 The analysis requires the following CSV files, which should be placed in a `data` subfolder within your project directory:
 
-1.  `data/Calculate_all_information_result_unclassfied.csv`: The main dataset containing all measurements for sediment samples, including age, TOC, DNA results, and biomass calculations.
-2.  `data/Viridiplantae_PCA_combin_all.csv`: A specialized dataset containing detailed abundance data for plant families (Viridiplantae), used for the PCA and specific family time-series plots.
+1.  `data/Calculate_all_information_result_unclassfied.csv`: The main dataset containing all measurements for sediment samples, including age, TOC, DNA results, and biomass calculations. Used by both scripts.
+2.  `data/Viridiplantae_PCA_combin_all.csv`: A specialized dataset containing detailed abundance data for plant families (Viridiplantae), used for the PCA in both scripts.
 
 ---
 
-## How to Run the Script
+## Project Scripts and Usage
 
-1.  **Clone or download the repository.**
-2.  **Organize your files.** Create two subdirectories in the main project folder:
-    -   `data/`: Place the required `.csv` files here.
-    -   `Figure/`: This folder will be created automatically by the script to store the output plots.
-3.  **Update file paths.** Open the `analysis_script.R` file. At the top of the script (Section 2), modify the `data_path` and `figure_path` variables to match your local file structure. **Using relative paths is highly recommended.**
-    ```R
-    # Example of updated relative paths
-    data_path <- "data/Calculate_all_information_result_unclassfied.csv"
-    figure_path <- "Figure/"
-    viridiplantae_path <- "data/Viridiplantae_PCA_combin_all.csv"
-    ```
-4.  **Execute the script.** Run the entire `analysis_script.R` in R or RStudio. The script will process the data and save all figures as both `.png` and `.pdf` files in the `Figure` directory.
+This project is organized around two primary R scripts.
+
+### 1. Main Visualization Script (`analysis_script.R`)
+
+This is the primary script for creating the visual outputs of the project.
+
+-   **Purpose**: To process the raw data and generate all figures (e.g., Fig 2-6, Supplementary Figs S3-S11).
+-   **Usage**:
+    1.  Ensure all required data files are in the `data` folder.
+    2.  Update the file paths at the top of the script.
+    3.  Run the script. It will generate and save all plots to the `Figure` folder.
+-   **Output**: A series of high-resolution plots saved as both `.png` and `.pdf` files.
+
+### 2. Statistical Analysis Script (`multivariate_analysis.R`)
+
+This script is dedicated to the core statistical modeling and does not produce saved plots.
+
+-   **Purpose**: To perform focused multivariate statistical analyses on the dataset. The script is structured to run RDA and PCA, and is set up with packages for GLMM (Generalized Linear Mixed-Effects Models).
+-   **Key Methods**:
+    -   **Redundancy Analysis (RDA)**: Performed on the full taxonomic dataset. The species data (biomass percentages) is **fourth-root transformed** to stabilize variance before analysis.
+    -   **Principal Component Analysis (PCA)**: Performed on the Viridiplantae (plant) dataset. The species data undergoes a **Hellinger transformation** followed by a **group-wise normalization** for each lake.
+-   **Usage**: Run the script to perform the calculations. The results, such as model summaries, will be printed directly to the R console.
+-   **Output**: Console output containing summaries of the RDA and PCA models (e.g., explained variance, component scores).
 
 ---
 
-## Script Structure
+## Output Summary
 
-The R script is organized into the following sections for clarity and maintainability:
-
--   **Section 1: Load Libraries:** Loads all necessary R packages.
--   **Section 2: Configuration and Data Loading:** Sets file paths and loads the primary datasets. It also performs initial data cleaning and defines helper functions used throughout the script.
--   **Figure 2-6 & Supplementary Figures S3-S11:** Each figure has its own dedicated section. Within each section, the code performs the specific data manipulation and generates the plot. This modular structure makes it easy to find, understand, and re-run the code for any specific figure.
-
----
-
-## Output
-
-The script will generate a series of high-resolution plots saved in the `Figure/` directory. These include:
-
--   **Maps and Bar Plots:** Comparing burial rates across different lake cores.
--   **Time-Series Plots:** Showing trends in TOC, DNA, biomass, and environmental variables over time.
--   **Compositional Plots:** Visualizing the relative abundance of different taxonomic groups.
--   **Ordination Plots (PCA/RDA):** Exploring the relationships between species composition and environmental drivers.
--   **Model Diagnostic and Effect Plots (LMM/GLM):** Showing the statistical results of the linear mixed-effects models.
+-   The **`analysis_script.R`** generates a comprehensive set of visual outputs (plots) in the `Figure/` directory.
+-   The **`multivariate_analysis.R`** provides statistical model results directly in the R console for interpretation and further analysis.
 
 ---
 
 ## Contact
 
-For any questions regarding the code or the analysis, please contact [Your Name] at [your.email@example.com].
+For any questions regarding the code or the analysis, please contact Josefine Friederike Weiß at Josefine-Friederike.Weiss@awi.de
