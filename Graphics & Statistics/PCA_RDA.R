@@ -1,7 +1,7 @@
 # =====================================================
 # Title: Multivariate Analyses of Aquatic-Terrestrial Transition Data
-# Author: [Zijuan Yong]
-# Date: [2025-07-15]
+# Author: Zijuan Yong
+# Date: 2025-07-15
 # Description: Performs PCA, RDA, and GLMM on sedimentary DNA biomass and environmental data.
 # =====================================================
 
