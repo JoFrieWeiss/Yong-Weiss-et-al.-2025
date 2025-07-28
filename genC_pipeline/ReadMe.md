@@ -70,6 +70,7 @@ cores_to_process <- list(
   list(number = 5, name = "Btoko"),
   list(number = 6, name = "ulu")
 )
+```
 
-**Authors:** Zijuan Yong, Josefine Friederike Weiß
+**Authors:** Josefine Friederike Weiß, Zijuan Yong
 **Date:** 2025
