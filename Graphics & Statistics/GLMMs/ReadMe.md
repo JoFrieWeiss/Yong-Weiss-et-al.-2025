@@ -6,9 +6,7 @@ This R pipeline estimates the projected DNA-based organic carbon burial rate (`B
 
 ## Prerequisites
 
-Before running this pipeline, ensure that the input file  
-[`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv)  
-is correctly prepared and accessible.
+Before running this pipeline, ensure that the input file [`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv)  is correctly prepared and accessible.
 
 This file must contain the following columns:
 - **BR_biomass**: raw DNA-based burial rate estimate  
