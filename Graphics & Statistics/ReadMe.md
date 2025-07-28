@@ -33,7 +33,7 @@ To run this analysis, you will need:
 
 The analysis requires the following CSV files, which should be placed in a `data` subfolder within your project directory:
 
-1. [`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-etal.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv): The main dataset containing all measurements for sediment samples, including age, TOC, DNA results, and biomass calculations. Used by both scripts.
+1. [`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv) : The main dataset containing all measurements for sediment samples, including age, TOC, DNA results, and biomass calculations. Used by both scripts.
 2.  [`Viridiplantae_PCA_combin_all.csv`]: A specialized dataset containing detailed abundance data for plant families (Viridiplantae), used for the PCA in both scripts.
 
 ---
