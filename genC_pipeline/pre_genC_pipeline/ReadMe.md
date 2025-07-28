@@ -1,7 +1,7 @@
-# pre genC pipeline
+# pre genC pipeline #
 
 This R pipeline automates the processing and calculation of DNA and sediment data from multiple raw input files. It merges datasets, converts relevant columns to numeric types, computes various derived metrics, and generates a fully processed output table with key DNA and habitat-related values.
----
+
 # PART 1
 
 ### 1.1 Bacteria/Archaea Species Habitat Classification Script
