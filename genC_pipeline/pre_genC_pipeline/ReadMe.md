@@ -93,8 +93,6 @@ The script is structured sequentially and can be run from top to bottom in one g
 
 ---
 
-**Authors:** Zijuan Yong & Josefine Friederike Weiß
-**Date:** 2025
 
 # PART 2 
 ## Overview
@@ -146,4 +144,7 @@ Make sure these files are correctly generated and accessible before running the 
 2. **Install dependencies**  
    Ensure you have the following R packages installed:
    ```r
-   install.packages(c("readr", "dplyr"))
+   install.packages(c("readr", "dplyr")) ```
+
+**Authors:** Zijuan Yong & Josefine Friederike Weiß
+**Date:** 2025
