@@ -42,7 +42,7 @@ The analysis requires the following CSV files, which should be placed in a `data
 
 This project is organized around two primary R scripts.
 
-### 1. Main Visualization Script (`analysis_script.R`)
+### 1. Main Visualization Script **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)**
 
 This is the primary script for creating the visual outputs of the project.
 
@@ -53,11 +53,11 @@ This is the primary script for creating the visual outputs of the project.
     3.  Run the script. It will generate and save all plots to the `Figure` folder.
 -   **Output**: A series of high-resolution plots saved as both `.png` and `.pdf` files.
 
-### 2. Statistical Analysis Script (`multivariate_analysis.R`)
+### 2. Statistical Analysis Script  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)**
 
 This script is dedicated to the core statistical modeling and does not produce saved plots.
 
--   **Purpose**: To perform focused multivariate statistical analyses on the dataset. The script is structured to run RDA and PCA, and is set up with packages for GLMM (Generalized Linear Mixed-Effects Models).
+-   **Purpose**: To perform focused multivariate statistical analyses on the dataset. The script is structured to run RDA and PCA.
 -   **Key Methods**:
     -   **Redundancy Analysis (RDA)**: Performed on the full taxonomic dataset. The species data (biomass percentages) is **fourth-root transformed** to stabilize variance before analysis.
     -   **Principal Component Analysis (PCA)**: Performed on the Viridiplantae (plant) dataset. The species data undergoes a **Hellinger transformation** followed by a **group-wise normalization** for each lake.
@@ -68,8 +68,8 @@ This script is dedicated to the core statistical modeling and does not produce s
 
 ## Output Summary
 
--   The **`analysis_script.R`** generates a comprehensive set of visual outputs (plots) in the `Figure/` directory.
--   The **`multivariate_analysis.R`** provides statistical model results directly in the R console for interpretation and further analysis.
+-   The **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)** generates a comprehensive set of visual outputs (plots) in the `Figure/` directory.
+-   The  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)** provides statistical model results directly in the R console for interpretation and further analysis.
 
 ---
 
