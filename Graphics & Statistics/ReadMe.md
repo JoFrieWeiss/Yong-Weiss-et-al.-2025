@@ -68,7 +68,7 @@ This script is dedicated to the core statistical modeling and does not produce s
 
 ## Output Summary
 
--   The **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)** generates a comprehensive set of visual outputs (plots) in the `Figure/` directory.
+-   The **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)** generates a comprehensive set of visual outputs (plots).
 -   The  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)** provides statistical model results directly in the R console for interpretation and further analysis.
 
 ---
