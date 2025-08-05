@@ -36,7 +36,7 @@ library(tidyverse)
 # Read the main DNA weight data
 # NOTE: Adjust the path according to your file structure.
 tryCatch({
-  DNA_weight_original <- read.csv("/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv")
+  DNA_weight_original  <- read.csv(paste0(data_dir, "Processed_DNA_habitat_percentage_aqu_ter_fer_unclassfied_new.csv"))
 }, error = function(e) {
   stop("Main DNA file could not be found. Please check the path.")
 })
@@ -45,7 +45,7 @@ tryCatch({
 # Read the values per cell. These will be reused in the function for each core.
 # NOTE: Adjust the path according to your file structure.
 tryCatch({
-  values_per_cell <- read_delim("/Volumes/projects/biodiv/user/ziyong/Average Biomass model/values_per_cell.csv",
+  values_per_cell <- read_delim(paste0(data_dir,"values_per_cell.csv",
                                 delim = ",", escape_double = FALSE, trim_ws = TRUE,
                                 locale = locale(decimal_mark = ","))
 }, error = function(e) {
@@ -273,7 +273,7 @@ cores_to_process <- list(
 
 # Define the base path for the output
 # NOTE: Adjust the path where the results should be saved.
-output_base_path <- "/Volumes/projects/biodiv/user/ziyong/A_aquatic_terrestrial/results_from_script"
+output_base_path <-(paste0(data_dir, "results_from_script")
 
 # Apply the function to each core in the list
 # The results are stored in 'results_list' if you want to use them further in R.
