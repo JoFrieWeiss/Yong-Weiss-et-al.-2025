@@ -6,7 +6,7 @@ This repository contains the integrated pipeline for ecological habitat classifi
 ---
 
 ## 1. MicroSCOPE: Ecological Source Tracking
-The MICROSCOPE module classifies the ecological origin of microbial taxa by calculating the **Taxon-specific Affinity Score (TAS)**. This score contrasts the frequency of a taxon $i$ in terrestrial vs. aquatic environments based on global MicrobeAtlas data.
+The MicroSCOPE module classifies the ecological origin of microbial taxa by calculating the **Taxon-specific Affinity Score (TAS)**. This score contrasts the frequency of a taxon $i$ in terrestrial vs. aquatic environments based on global MicrobeAtlas data.
 
 ### TAS Formula
 The TAS score ($T_i$) for a specific taxon $i$ is defined as:
