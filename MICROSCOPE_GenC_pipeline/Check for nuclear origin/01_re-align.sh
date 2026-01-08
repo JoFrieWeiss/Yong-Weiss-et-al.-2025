@@ -22,7 +22,7 @@
 #SBATCH --mem=100G
 #SBATCH --cpus-per-task=32
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=Josefine-Friederike.Weiss@awi.de
+#SBATCH --mail-user=email@adress.de
 
 # ============ MODULES ============
 # Load modules
@@ -33,10 +33,12 @@ module load samtools/1.20
 
 # ============ CONFIGURATION ============
 # parent
-work_dir="/albedo/scratch/user/joweis001/BTOKO"
+work_dir="/path/to/your/working/directory"
 # path to out.metaDMG.subset
 path2dmg="${work_dir}/output-lc/out.metaDMG.subset"
+# path to your metadata
 mapping_file="${work_dir}/sample2org2ref.tsv"
+# path to your reference data
 ref_base_dir="${work_dir}/references/ncbi_dataset/data"
 
 # ============ GET SAMPLE ============
