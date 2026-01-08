@@ -26,13 +26,13 @@
 
 # ============ CONFIG ============
 # parent
-work_dir="/albedo/scratch/user/joweis001/BTOKO"
+work_dir="/your/working/directory/"
 # path to out.metaDMG
-path2dmg="/albedo/work/projects/p_biodiv_shotgun/04_HOLI-post/genC"
+path2dmg="/path/to/your/out.metaDMG"
 # get sample list and past to slurm
 cd ${path2dmg}
 #sample_id=$(basename $(find . -mindepth 1 -maxdepth 1 -type d | sed -n ${SLURM_ARRAY_TASK_ID}p))
-sample_id="JK079L-9_S9"
+sample_id="Your Sample-ID"
 
 # which min len
 len_thd="L30"
