@@ -1,20 +1,31 @@
-# Bioinformatic Pipeline: Taxon-Specific Extraction & Re-mapping
+# Bioinformatic Pipeline: From metaDMG to Genomic Visualization
 
-This pipeline is designed for high-precision taxonomic verification. It consists of two interconnected SLURM scripts: **Step 1** filters broad metaDMG results into specific taxonomic subsets, and **Step 2** performs targeted re-alignment of those specific reads against chosen reference genomes.
+This pipeline provides a complete workflow for extracting taxon-specific reads, re-mapping them against high-quality reference genomes, and visualizing the distribution across Nuclear, Mitochondrial, and Plastid DNA.
 
 ---
 
-## SETUP & PREREQUISITES
+## 📋 Table of Contents
+1. [Overview](#-overview)
+2. [Prerequisites](#-prerequisites)
+3. [Step 1: Taxon Extraction (SLURM)](#-step-1-taxon-extraction-slurm)
+4. [Step 2: Read Re-mapping (SLURM)](#-step-2-read-re-mapping-slurm)
+5. [Step 3: R Visualization (Local)](#-step-3-r-visualization-local)
 
-### 1. Cluster Modules
-The scripts require the following tools to be available in your environment:
-- `bowtie2/2.5.1`
-- `samtools/1.20`
+---
 
-### 2. Metadata File (`sample2org2ref.tsv`)
-Step 2 requires a tab-separated metadata file located in your working directory. This file tells the script which reference genome to use for each organism found in your samples:
+## 🔍 Overview
+The pipeline solves the problem of verifying metaDMG hits by re-aligning identified reads to specific references. This helps to confirm the presence of specific taxa and see where the reads originate (e.g., organellar vs. nuclear).
 
-```text
-sample	organism	ref_genome	ref_size
-Sample_A	Salicaceae	GCF_00123	1500
-Sample_A	Dryas	GCF_00456	2000
+---
+
+## 🛠 Prerequisites
+
+### Cluster (Linux/SLURM)
+- **Modules:** `bowtie2/2.5.1`, `samtools/1.20`
+- **Metadata:** A file named `sample2org2ref.tsv` with columns: `sample`, `organism`, `ref_genome`, `ref_size`.
+
+### Local Machine (R)
+- **Libraries:** `tidyverse`, `fs`
+- **Data:** Sequence Reports (`.tsv`) downloaded from the NCBI Assembly database for each reference genome used.
+
+---
