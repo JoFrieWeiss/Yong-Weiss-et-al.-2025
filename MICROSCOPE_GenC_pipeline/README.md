@@ -73,8 +73,6 @@ $$V(Y) = \sum_{i} V_i + \sum_{i < j} V_{ij} + \dots + V_{12\dots k}$$
     $$S_i = \frac{V(E[Y | X_i])}{V(Y)}$$
 * **Total-effect Index ($S_{Ti}$):** Accounts for the main effect of $X_i$ plus all its higher-order interactions with other variables.
 
-### Key Insights from our Analysis
-* **Our sensitivity tests (N=10,000 iterations) show that the model is **highly sensitive to the C-value (Ploidie/Genome size)**. Therefore, the pipeline implements a rigorous taxon-specific correction for these values to ensure biological accuracy.**
 ---
 **Authors:** Josefine Friederike Weiß (2026)  
 **Project:** Nature Communications (Preparation)
