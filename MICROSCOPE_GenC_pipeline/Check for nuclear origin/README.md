@@ -2,11 +2,9 @@
 
 This pipeline is designed for high-precision taxonomic verification. It consists of two interconnected SLURM scripts: **Step 1** filters broad metaDMG results into specific taxonomic subsets, and **Step 2** performs targeted re-alignment of those specific reads against chosen reference genomes.
 
-[Image of bioinformatic workflow showing taxonomic read filtering from metaDMG results followed by Bowtie2 mapping]
-
 ---
 
-## 🛠 SETUP & PREREQUISITES
+## SETUP & PREREQUISITES
 
 ### 1. Cluster Modules
 The scripts require the following tools to be available in your environment:
