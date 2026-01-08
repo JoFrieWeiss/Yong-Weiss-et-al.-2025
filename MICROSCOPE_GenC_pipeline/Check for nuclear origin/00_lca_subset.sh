@@ -22,7 +22,7 @@
 #SBATCH --mem=10G
 #SBATCH --cpus-per-task=12
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=Josefine-Friederike.Weiss@awi.de
+#SBATCH --mail-user=email@adress.de
 
 # ============ CONFIG ============
 # parent
