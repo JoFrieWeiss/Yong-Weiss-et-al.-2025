@@ -59,6 +59,22 @@ $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [D
 2. Run the scripts sequentially (Part 1 $\rightarrow$ Part 2 $\rightarrow$ Part 3).
 3. Ensure R packages `dplyr`, `ggplot2`, `patchwork`, and `sensitivity` are installed.
 
+## 5. Sensitivity Analysis & Robustness
+To evaluate the reliability of the reconstructed biomass $\hat{B}_i$, the pipeline includes a global sensitivity analysis (Monte Carlo based). This identifies which input parameters (e.g., DNA concentration, C-value, or extraction efficiency) contribute most to the overall uncertainty.
+
+### Mathematical Approach: OAT & Sobol Indices
+We use a combination of **One-at-a-Time (OAT)** variation and **Variance-based Sensitivity Analysis**. 
+
+The total variance of the output $V(Y)$ is decomposed into the contributions of individual input factors:
+
+$$V(Y) = \sum_{i} V_i + \sum_{i < j} V_{ij} + \dots + V_{12\dots k}$$
+
+* **First-order Sensitivity Index ($S_i$):** Measures the direct contribution of input $X_i$ to the output variance:
+    $$S_i = \frac{V(E[Y | X_i])}{V(Y)}$$
+* **Total-effect Index ($S_{Ti}$):** Accounts for the main effect of $X_i$ plus all its higher-order interactions with other variables.
+
+### Key Insights from our Analysis
+Our sensitivity tests (N=10,000 iterations) show that the model is **highly sensitive to the C-value (Ploidie/Organelles)**. Therefore, the pipeline implements a rigorous taxon-specific correction for these values to ensure biological accuracy.
 ---
 **Authors:** Josefine Weiss (2026)  
 **Project:** Nature Communications (Preparation)
