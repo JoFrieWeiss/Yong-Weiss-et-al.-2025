@@ -9,9 +9,8 @@ library(fs)
 
 # --- 1. CONFIGURATION & PATHS ---
 # Define directory paths for input data
-# Note for GitHub: Use relative paths or environment variables for reproducibility
-report_path <- "/Users/josefineweiss/Downloads/REMAPPING_sequence_reports/"
-sample_path <- "/Users/josefineweiss/Desktop/Zijuan Manuscript/BTOKO_remapping" 
+report_path <- "/path/to/remapping/reports"
+sample_path <- "/path/to/sequence/remapping" 
 
 # List relevant files
 report_files <- list.files(path = report_path, pattern = "_sequence_report.tsv", full.names = TRUE)
@@ -20,7 +19,7 @@ sample_files <- list.files(path = sample_path, pattern = "\\.tsv$", full.names =
 # --- 2. DATA LOAD FUNCTIONS ---
 
 #' Load NCBI Sequence Reports
-#' Parses assembly reports to map Accession IDs to human-readable chromosome names.
+#' Parses assembly reports to map Accession IDs to chromosome names.
 read_report_robust <- function(file) {
   read_tsv(file, comment = "#", show_col_types = FALSE,
            col_types = cols(
@@ -80,7 +79,7 @@ assembly_structure <- all_reports %>%
   select(ref_genome = assembly_acc, chromosome_name) %>%
   distinct()
 
-# Create biological skeleton (Join samples with expected genomic structure)
+# Create skeleton (Join samples with expected genomic structure)
 skeleton <- left_join(sample_overview, assembly_structure, by = "ref_genome")
 
 if(nrow(skeleton) == 0) {
