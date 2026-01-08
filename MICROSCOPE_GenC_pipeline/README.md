@@ -76,5 +76,5 @@ $$V(Y) = \sum_{i} V_i + \sum_{i < j} V_{ij} + \dots + V_{12\dots k}$$
 ### Key Insights from our Analysis
 * **Our sensitivity tests (N=10,000 iterations) show that the model is **highly sensitive to the C-value (Ploidie/Organelles)**. Therefore, the pipeline implements a rigorous taxon-specific correction for these values to ensure biological accuracy.**
 ---
-**Authors:** Josefine Weiss (2026)  
+**Authors:** Josefine Friederike Weiß (2026)  
 **Project:** Nature Communications (Preparation)
