@@ -16,7 +16,7 @@ $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_
 **Key Parameters:**
 * $V_{i,j}$: Frequency of taxon $i$ in terrestrial habitat $j$.
 * $V_{i,k}$: Frequency of taxon $i$ in aquatic habitat $k$.
-  $\mathcal{H}_{terr}$ and $\mathcal{H}_{aqua}$: Mathematical sets representing the collection of terrestrial and aquatic habitat descriptors.
+* $\mathcal{H}_{terr}$ and $\mathcal{H}_{aqua}$: Mathematical sets representing the collection of terrestrial and aquatic habitat descriptors.
     
 * **Artifact Filter:** A stringent filter is applied to remove recurrent database-specific biases: $|T_i - 0.3461187| > 10^{-7}$.
 **Key Parameters:**
