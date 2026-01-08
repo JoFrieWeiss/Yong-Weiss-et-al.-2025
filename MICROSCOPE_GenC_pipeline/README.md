@@ -9,9 +9,15 @@ This repository contains the integrated pipeline for ecological habitat classifi
 The MICROSCOPE module classifies the ecological origin of microbial taxa by calculating the **Taxon-specific Assignment Score (TAS)**. This score contrasts the frequency of a taxon $i$ in terrestrial vs. aquatic environments based on global MicrobeAtlas data.
 
 ### TAS Formula
-The TAS score ($T_i$) is defined as:
+The TAS score ($T_i$) for a specific taxon $i$ is defined as:
+
 $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_{aqua}} V_{i,k}}{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} + \sum_{k \in \mathcal{H}_{aqua}} V_{i,k}}$$
 
+**Key Parameters:**
+* $V_{i,j}$: Frequency of taxon $i$ in terrestrial habitat $j$.
+* $V_{i,k}$: Frequency of taxon $i$ in aquatic habitat $k$.
+* $\mathcal{H}_{terr} / \mathcal{H}_{aqua}$: Sets of terrestrial and aquatic habitat categories.
+* **Artifact Filter:** A stringent filter is applied to remove recurrent database-specific biases: $|T_i - 0.3461187| > 10^{-7}$.
 **Key Parameters:**
 * $T_i \in [-1, 1]$
 * **Artifact Filter:** A stringent filter is applied to remove recurrent database-specific biases: $|T_i - 0.3461187| > 10^{-7}$
