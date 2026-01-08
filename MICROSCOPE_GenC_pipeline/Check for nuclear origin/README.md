@@ -4,7 +4,7 @@ This pipeline provides a complete workflow for extracting taxon-specific reads, 
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 1. [Overview](#-overview)
 2. [Prerequisites](#-prerequisites)
 3. [Step 1: Taxon Extraction (SLURM)](#-step-1-taxon-extraction-slurm)
@@ -13,12 +13,12 @@ This pipeline provides a complete workflow for extracting taxon-specific reads, 
 
 ---
 
-## 🔍 Overview
+## Overview
 The pipeline solves the problem of verifying metaDMG hits by re-aligning identified reads to specific references. This helps to confirm the presence of specific taxa and see where the reads originate (e.g., organellar vs. nuclear).
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 ### Cluster (Linux/SLURM)
 - **Modules:** `bowtie2/2.5.1`, `samtools/1.20`
