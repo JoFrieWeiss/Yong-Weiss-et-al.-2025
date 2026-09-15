@@ -1,55 +1,74 @@
 # Analysis of Lake Sediment Core Data
 
-## Overview
-
-This repository contains the R scripts used for the statistical analyses presented in this study.
-
-The analyses include:
-
-* Generalized linear mixed-effects models (GLMMs) for biomass burial rate and aquatic biomass percentage
-* Principal component analysis (PCA) of plant family composition
-* Extraction of PCA scores for further analyses
+The repository includes analyses of biomass burial rate, aquatic biomass percentage, and plant family composition using generalized linear mixed-effects models (GLMMs) and principal component analysis (PCA).
 
 ## Repository structure
 
 ```text
-Burial_rate_biomass_analysis/
+Yong-Weiss-et-al.-2025/
 │
 ├── README.md
 │
 └── Graphics & Statistics/
     ├── GLMM_analysis.R
-    └── PCA_analysis.R
+    ├── PCA_analysis.R
+    ├── Processed_DNA_with_MC_biomass_final.csv
+    └── Comibne_plant_percentage.csv
 ```
 
 ## Analysis scripts
 
 ### GLMM_analysis.R
 
-This script performs two GLMM analyses:
+This script performs generalized linear mixed-effects model analyses of:
 
 1. Total biomass burial rate
 2. Aquatic biomass percentage
 
-Environmental variables are standardized within Lake, with Lake included as a random intercept.
+Continuous predictor variables are standardized within lake, and **Lake** is included as a random intercept.
+
+The analysis uses the following R packages:
+
+* `dplyr`
+* `glmmTMB`
+* `ggeffects`
 
 ### PCA_analysis.R
 
-This script performs PCA on plant family composition data, including:
+This script performs principal component analysis of plant family composition.
 
-* Hellinger transformation
-* Standardization within Lake
-* PCA using `vegan::rda()`
+The analysis includes:
+
+* Hellinger transformation of plant family composition data
+* Within-lake normalization
+* Principal component analysis using `vegan::rda()`
 * Extraction of PCA site scores
-* Calculation of explained variance
+* Calculation of the variance explained by the principal components
 
-## Data availability
+The analysis uses the following R packages:
 
-The datasets used for these analyses are not included in this repository.
+* `dplyr`
+* `vegan`
 
-The scripts require the corresponding input datasets to run the analyses. Data availability is subject to the data-sharing conditions of the study.
+## Input datasets
 
-## Required R packages
+### Processed_DNA_with_MC_biomass_final.csv
+
+This dataset contains the processed biomass and environmental variables used for the GLMM analyses, including biomass burial rate, aquatic biomass percentage, environmental predictors, and sequencing-related variables.
+
+### Comibne_plant_percentage.csv
+
+This dataset contains plant family composition data used for the PCA analysis.
+
+## Reproducibility
+
+The R scripts are designed to reproduce the statistical analyses reported in the study using the corresponding input datasets provided in this repository.
+
+The scripts should be run from the repository root directory. Input data are located in the `Graphics & Statistics/` directory.
+
+## R packages
+
+The required packages can be installed using:
 
 ```r
 install.packages(c(
@@ -60,10 +79,11 @@ install.packages(c(
 ))
 ```
 
-## Reproducibility
+## Data and code availability
 
-The scripts in `Graphics & Statistics/` contain the statistical analysis procedures used in this study.
+The datasets and R scripts required to reproduce the statistical analyses are publicly available in this repository.
 
-## Contact
+The repository contains the analysis code together with the corresponding input datasets used for the GLMM and PCA analyses.
+
 
 For any questions regarding the code or the analysis, please contact Josefine Friederike Weiß at Josefine-Friederike.Weiss@awi.de
