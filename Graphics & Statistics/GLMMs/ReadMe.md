@@ -1,39 +1,51 @@
-# Projected DNA-based Organic Carbon Burial Rate Estimation from Lake Sediments
+# Burial Rate and Biomass Analysis
 
-This R pipeline estimates the projected DNA-based organic carbon burial rate (`BR_Biomass`) from lake sediment cores using standardized environmental predictors and a linear mixed-effects model.
+## Overview
 
----
+This repository contains the R code and processed dataset used to investigate the relationships between environmental variables, total biomass burial rate, and aquatic biomass percentage.
 
-## Prerequisites
+## Files
 
-Before running this pipeline, ensure that the input file [`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv)  is correctly prepared and accessible.
+```text
+Burial_rate_biomass_analysis/
+├── README.md
+├── GLMM_analysis.R
+└── data/
+    └── Processed_DNA_with_MC_biomass_final.csv
+```
 
-This file must contain the following columns:
-- **BR_biomass**: raw DNA-based burial rate estimate  
-- **Environmental predictors**: `Sediment.Rate`, `PC1`, `PC2`, `Pann`, `TJul`  
-- **Metadata**: `Lake`, `Age`, `Number`  
+### `GLMM_analysis.R`
 
----
+This script performs two generalized linear mixed-effects models (GLMMs):
 
-## Pipeline Overview
+1. **Total biomass burial rate**
 
-The pipeline consists of the following main steps:
+   * Response: `BR_Total_median_biomass`
+   * Gamma distribution with log link
 
-### 1. Load Required Libraries
-Loads the `lmerTest` and `dplyr` packages for statistical modeling and data processing.
+2. **Aquatic biomass percentage**
 
-### 2. Data Input
-Reads the input file containing sedaDNA and environmental data.
+   * Response: `Biomass_Aquatic_percentage`
 
-### 3. Preprocessing
-- Standardizes (z-scores) the environmental predictors within each lake.
-- Log10-transforms `BR_biomass` to improve normality.
-- Merges standardized predictors with the transformed response variable.
+Environmental predictors are standardized within Lake, and Lake is included as a random intercept in both models.
 
-### 4. Modeling
-Fits a linear mixed-effects model with the following formula:
+### `Processed_DNA_with_MC_biomass_final.csv`
 
-```R
-BR_Biomass ~ scaled_Age + scaled_Sediment.Rate + scaled_PC1 +
-             scaled_PC2 + scaled_Pann + scaled_TJul + (1 | Lake)
+This is the final processed dataset containing all variables required for the analyses. No additional biomass calculations are performed in `GLMM_analysis.R`.
+
+## Required R packages
+
+```r
+install.packages(c("dplyr", "glmmTMB", "ggeffects"))
+```
+
+## Running the analysis
+
+Place the dataset in the `data/` folder and run:
+
+```r
+source("GLMM_analysis.R")
+```
+
+This will run the complete statistical analysis.
 
