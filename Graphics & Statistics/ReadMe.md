@@ -1,77 +1,90 @@
 # Analysis of Lake Sediment Core Data
 
-## Description
 
-This project analyzes lake sediment core data to explore the relationships between organic carbon (OC) burial, biomass composition, and environmental factors over time. The project contains two main R scripts:
+## Overview
 
-1.  **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)**: This script focuses on data processing, exploration, and the generation of all primary and supplementary figures for publication.
-2.  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)**: This script is dedicated to performing focused multivariate statistical analyses, including Redundancy Analysis (RDA) and Principal Component Analysis (PCA).
+This repository contains the R scripts used for the statistical analyses in this study.
 
----
+The analyses include:
 
-## Prerequisites
+* Generalized linear mixed-effects models (GLMMs) for biomass burial rate and aquatic biomass percentage
+* Principal component analysis (PCA) of plant family composition
+* Extraction of PCA scores for downstream analyses
 
-To run this analysis, you will need:
--   **R** (version 4.0 or later recommended)
--   **RStudio** (recommended for easier project management)
--   The following R packages. You can install all of them by running this command in your R console:
-    ```R
-    # This command installs all packages needed for both scripts
-    install.packages(c(
-        "tidyverse", "reshape2", "cowplot", "patchwork", "scales", 
-        "vegan", "lmerTest", "effects", "mgcv", "devtools", 
-        "RColorBrewer", "ggrepel", "ggtext", "png", "grid"
-    ))
-    
-    # The 'corit' package needs to be installed from GitHub
-    devtools::install_github("EarthSystemDiagnostics/corit")
-    ```
+## Repository structure
 
----
+```text
+Burial_rate_biomass_analysis/
+│
+├── README.md
+│
+├── scripts/
+   ├── GLMM_analysis.R
+   └── PCA_analysis.R
 
-## Data Files
+```
 
-The analysis requires the following CSV files, which should be placed in a `data` subfolder within your project directory:
+## Analyses
 
-1. [`Calculate_all_information_result_unclassfied.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Calculate_all_information_result_unclassfied.csv) : The main dataset containing all measurements for sediment samples, including age, TOC, DNA results, and biomass calculations. Used by both scripts.
-2.  [`Viridiplantae_PCA_combin_all.csv`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Viridiplantae_PCA_combin_all.csv) : A specialized dataset containing detailed abundance data for plant families (Viridiplantae), used for the PCA in both scripts.
+### GLMM analysis
 
----
+`GLMM_analysis.R` contains two generalized linear mixed-effects models:
 
-## Project Scripts and Usage
+* **Total biomass burial rate**
 
-This project is organized around two primary R scripts.
+  * Response: `BR_Total_median_biomass`
+  * Gamma distribution with log link
 
-### 1. Main Visualization Script **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)**
+* **Aquatic biomass percentage**
 
-This is the primary script for creating the visual outputs of the project.
+  * Response: `Biomass_Aquatic_percentage`
 
--   **Purpose**: To process the raw data and generate all figures (e.g., Fig 2-6, Supplementary Figs S3-S11).
--   **Usage**:
-    1.  Ensure all required data files are in the `data` folder.
-    2.  Update the file paths at the top of the script.
-    3.  Run the script. It will generate and save all plots to the `Figure` folder.
--   **Output**: A series of high-resolution plots saved as both `.png` and `.pdf` files.
+Environmental variables are standardized within Lake, and Lake is included as a random intercept.
 
-### 2. Statistical Analysis Script  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)**
+### PCA analysis
 
-This script is dedicated to the core statistical modeling and does not produce saved plots.
+`PCA_analysis.R` performs PCA on plant family composition data.
 
--   **Purpose**: To perform focused multivariate statistical analyses on the dataset. The script is structured to run RDA and PCA.
--   **Key Methods**:
-    -   **Redundancy Analysis (RDA)**: Performed on the full taxonomic dataset. The species data (biomass percentages) is **fourth-root transformed** to stabilize variance before analysis.
-    -   **Principal Component Analysis (PCA)**: Performed on the Viridiplantae (plant) dataset. The species data undergoes a **Hellinger transformation** followed by a **group-wise normalization** for each lake.
--   **Usage**: Run the script to perform the calculations. The results, such as model summaries, will be printed directly to the R console.
--   **Output**: Console output containing summaries of the RDA and PCA models (e.g., explained variance, component scores).
+The analysis includes:
 
----
+1. Hellinger transformation
+2. Standardization within Lake
+3. PCA using `vegan::rda()`
+4. Extraction of PCA site scores
+5. Calculation of explained variance
 
-## Output Summary
+## Data availability
 
--   The **[`Plots.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/Plots.R)** generates a comprehensive set of visual outputs (plots).
--   The  **[`PCA_RDA.R`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/Graphics%20%26%20Statistics/PCA_RDA.R)** provides statistical model results directly in the R console for interpretation and further analysis.
+The datasets used in these analyses are not included in this repository.
 
----
+The scripts require the corresponding input datasets to run the analyses. Data availability is subject to the data-sharing conditions of the study.
+
+## R packages
+
+The analyses require the following R packages:
+
+```r
+install.packages(c(
+  "dplyr",
+  "glmmTMB",
+  "ggeffects",
+  "vegan"
+))
+```
+
+## Running the analyses
+
+The scripts are located in the `scripts/` directory.
+
+Run the scripts from the repository root:
+
+```r
+source("scripts/GLMM_analysis.R")
+source("scripts/PCA_analysis.R")
+```
+
+The scripts reproduce the statistical analyses used in this study.
+
 
 ## Contact
 
