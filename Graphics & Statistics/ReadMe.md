@@ -1,15 +1,14 @@
 # Analysis of Lake Sediment Core Data
 
-
 ## Overview
 
-This repository contains the R scripts used for the statistical analyses in this study.
+This repository contains the R scripts used for the statistical analyses presented in this study.
 
 The analyses include:
 
 * Generalized linear mixed-effects models (GLMMs) for biomass burial rate and aquatic biomass percentage
 * Principal component analysis (PCA) of plant family composition
-* Extraction of PCA scores for downstream analyses
+* Extraction of PCA scores for further analyses
 
 ## Repository structure
 
@@ -18,50 +17,39 @@ Burial_rate_biomass_analysis/
 │
 ├── README.md
 │
-├── scripts/
-   ├── GLMM_analysis.R
-   └── PCA_analysis.R
-
+└── Graphics & Statistics/
+    ├── GLMM_analysis.R
+    └── PCA_analysis.R
 ```
 
-## Analyses
+## Analysis scripts
 
-### GLMM analysis
+### GLMM_analysis.R
 
-`GLMM_analysis.R` contains two generalized linear mixed-effects models:
+This script performs two GLMM analyses:
 
-* **Total biomass burial rate**
+1. Total biomass burial rate
+2. Aquatic biomass percentage
 
-  * Response: `BR_Total_median_biomass`
-  * Gamma distribution with log link
+Environmental variables are standardized within Lake, with Lake included as a random intercept.
 
-* **Aquatic biomass percentage**
+### PCA_analysis.R
 
-  * Response: `Biomass_Aquatic_percentage`
+This script performs PCA on plant family composition data, including:
 
-Environmental variables are standardized within Lake, and Lake is included as a random intercept.
-
-### PCA analysis
-
-`PCA_analysis.R` performs PCA on plant family composition data.
-
-The analysis includes:
-
-1. Hellinger transformation
-2. Standardization within Lake
-3. PCA using `vegan::rda()`
-4. Extraction of PCA site scores
-5. Calculation of explained variance
+* Hellinger transformation
+* Standardization within Lake
+* PCA using `vegan::rda()`
+* Extraction of PCA site scores
+* Calculation of explained variance
 
 ## Data availability
 
-The datasets used in these analyses are not included in this repository.
+The datasets used for these analyses are not included in this repository.
 
 The scripts require the corresponding input datasets to run the analyses. Data availability is subject to the data-sharing conditions of the study.
 
-## R packages
-
-The analyses require the following R packages:
+## Required R packages
 
 ```r
 install.packages(c(
@@ -72,19 +60,9 @@ install.packages(c(
 ))
 ```
 
-## Running the analyses
+## Reproducibility
 
-The scripts are located in the `scripts/` directory.
-
-Run the scripts from the repository root:
-
-```r
-source("scripts/GLMM_analysis.R")
-source("scripts/PCA_analysis.R")
-```
-
-The scripts reproduce the statistical analyses used in this study.
-
+The scripts in `Graphics & Statistics/` contain the statistical analysis procedures used in this study.
 
 ## Contact
 
