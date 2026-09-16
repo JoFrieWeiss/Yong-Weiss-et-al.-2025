@@ -1,8 +1,8 @@
-# Yong & Weiß et al., 2025
+# Yong & Weiß et al., 2026
 
 This repository contains all scripts and pipelines for the analyses presented in:
 ---
-Zijuan Yong<sup>+</sup>, Josefine Friederike Weiß<sup>+</sup>, Kathleen R. Stoof-Leichsenring, Sisi Liu, Ulrike Herzschuh<sup>*</sup> (2025): 
+Zijuan Yong<sup>+</sup>, Josefine Friederike Weiß<sup>+</sup>, Kathleen R. Stoof-Leichsenring, Sisi Liu,Andrei Andreev, Ulrike Herzschuh<sup>*</sup> (2026): 
 Quantitative contribution of major organism groups to lake organic carbon burial since the last glacial inferred from sedimentary ancient DNA
 
 
