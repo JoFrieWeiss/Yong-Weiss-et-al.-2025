@@ -34,7 +34,7 @@ $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [D
 
 **Variables and Units:**
 * $\hat{B}_{i}$: Median reconstructed OC ($g_{\text{C}} \cdot g_{\text{sed}}^{-1}$)
-* * $\bar{L}$: Arithmetic mean read length of the sample (bp)
+* $\bar{L}$: Arithmetic mean read length of the sample (bp)
 * $[DNA]_{p}$: DNA concentration in the sequencing pool ($ng \cdot \mu l^{-1}$)
 * $R_i$: Relative read proportion (%)
 * $C_{i,s}$: Simulated carbon mass per cell via Beta-Priors ($g_{C} \cdot cell^{-1}$)
