@@ -20,7 +20,7 @@ Make sure to complete this step to generate the necessary input files used in th
 
 - [`Data_Mining/Habitat/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Data_Mining/Habitat): Scripts for scraping species-level habitat metadata (e.g., from BacDive and Microbeatlas).
 - [`genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC pipeline): Pipeline to estimate group-specific DNA-based biomass and carbon from sedaDNA.
-  - [`pre_genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/genC_pipeline/pre_genC_pipeline): Calculating the average read length for later processing in the genC pipeline.
+  - [`pre_genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC pipeline/Read length): Calculating the average read length for later processing in the genC pipeline.
 
 ---
 
@@ -28,9 +28,9 @@ Make sure to complete this step to generate the necessary input files used in th
 
 1. Prepare merged sedaDNA data with taxonomic assignments and read counts per species using ['HOLI'](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025-HOLI)
 2. Use [`Data_Mining/Habitat/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Data_Mining/Habitat) to generate updated species lists with habitat info.
-3. Run the [`pre_genC_pipeline` Part 1](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/pre_genC_pipeline/pre_genC_pipeline_Part1.R) to classify species based on isolation source tags and ratios and [`pre_genC_pipeline` Part 2](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/blob/main/genC_pipeline/pre_genC_pipeline/pre_genC_pipeline_Part2.R) to generate DNA weight proportions.
+3. Run the [`pre_genC_pipeline` Part 1](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC pipeline/Read length) to extract the read length.
 4. Use [`Data_Mining/DNA_C_value/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Data_Mining/DNA_C_value) to generate lists of DNA weight per cell per organism.
-5. Run the [`genC_pipeline`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/genC_pipeline) to estimate group-specific DNA-based biomass and carbon.
+5. Run the [`genC_pipeline`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC pipeline) to estimate group-specific DNA-based biomass and carbon.
 
 ---
 
