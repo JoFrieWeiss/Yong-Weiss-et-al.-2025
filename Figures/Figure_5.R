@@ -20,7 +20,7 @@
 #
 # Data:
 #   data/Processed_DNA_with_MC_biomass_final.csv
-#   data/Pollendata/Algae pecentage csv.csv
+#   data/Algae_percentage.csv
 #
 # Output:
 #   figures
