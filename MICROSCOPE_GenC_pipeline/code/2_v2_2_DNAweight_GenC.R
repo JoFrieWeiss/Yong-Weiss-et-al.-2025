@@ -109,7 +109,7 @@ process_core_percentages <- function(core_name, core_data_full) {
       ) %>%
       select(ka, aquatic_reads, terrestrial_reads)
     
-    # 6. 对已分类部分保持原值
+
     fixed_split <- merged %>%
       filter(simple_habitat %in% c("aquatic_1", "terrestrial_1")) %>%
       mutate(
@@ -118,7 +118,7 @@ process_core_percentages <- function(core_name, core_data_full) {
       ) %>%
       select(ka, aquatic_reads, terrestrial_reads)
     
-    # 7. 合并并按 ka 汇总
+
     grouped <- bind_rows(mid_split, fixed_split) %>%
       group_by(ka) %>%
       summarise(
@@ -127,14 +127,13 @@ process_core_percentages <- function(core_name, core_data_full) {
         .groups = "drop"
       )
     
-    # 8. Merge everything
+    # Merge everything
     final <- base_stats %>%
       left_join(dom_total_ALL, by="ka") %>%
       left_join(dom_total_SPECIES, by="ka") %>%
       left_join(grouped, by="ka") %>%
       replace(is.na(.), 0)
     
-    # 6. CALCULATE SPLITS
     final %>%
       mutate(
         # A. Taxonomic Unclassified
@@ -346,7 +345,7 @@ process_core_percentages <- function(core_name, core_data_full) {
     arrange(ka) %>%
     rename(Age = ka) 
   
-  # Spaltennamen säubern
+  # Clean column names
   colnames(master_table) <- gsub("_unc_tax", "_unclassified_taxonomic_percentage", colnames(master_table)) %>%
     gsub("_unc_hab", "_unclassified_habitat_percentage", .) %>%
     gsub("_pct_", "_", .) 
@@ -392,11 +391,11 @@ for (id in names(cores_to_process)) {
     if(file.exists(expected_file)) {
       message(paste("SUCCESS: File written to", expected_file))
     } else {
-      warning(paste("❌ ERROR: Function finished, but NO FILE found at", expected_file))
+      warning(paste("ERROR: Function finished, but NO FILE found at", expected_file))
     }
     
   } else {
-    warning(paste("⚠️  SKIP: Object '", core_obj_name, "' not found in Environment. Did you load the data?"))
+    warning(paste("SKIP: Object '", core_obj_name, "' not found in Environment. Did you load the data?"))
   }
 }
 
@@ -431,7 +430,7 @@ for (core in core_names) {
     list_of_dfs[[core]] <- tmp_df
   } else {
     # This warning will show you exactly where R is looking
-    warning(paste("❌ File NOT FOUND at:", f_path))
+    warning(paste("File NOT FOUND at:", f_path))
   }
 }
 
