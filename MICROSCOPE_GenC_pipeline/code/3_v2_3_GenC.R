@@ -1,5 +1,5 @@
 # =============================================================================
-# GENC PIPELINE PART 3: BIOMASS RECONSTRUCTION (FINAL & ROBUST)
+# GENC PIPELINE PART 3: BIOMASS RECONSTRUCTION
 # =============================================================================
 ## please change path for windows in line 27, 28, 29
 # ==============================================================================
@@ -31,7 +31,7 @@ PATH_OUTPUT_DIR <- "D:/document/DOC/AWI/Lake organic/FINAL_GenC_pipeline_Josefin
 N_SIMS_MC <- 10000      # High N stabilizes the Median against outliers
 N_SOBOL   <- 2000       
 
-# --- C. CORRECTION FACTORS (Base Assumptions) ---
+# --- C. CORRECTION FACTORS  ---
 PARAM_EXTRACTION_EFFICIENCY <- 4.0 
 PARAM_STRUCT_BACTERIA <- 2.5   
 PARAM_STRUCT_ALGAE    <- 1.5   
@@ -106,7 +106,7 @@ if("Age.x" %in% names(DNA_global)) {
 } else if ("join_Age" %in% names(DNA_global)) {
   DNA_global$Age <- DNA_global$join_Age
 } 
-# Note: If it's already called "Age", we don't need to do anything.
+# Note: If it's already called "Age", you don't need to do anything.
 
 # Same for Core
 if("Core.x" %in% names(DNA_global)) {
@@ -127,13 +127,13 @@ if(!"Age" %in% names(DNA_global)) {
 values_per_cell_global <- read_csv2(PATH_CONVERSION, show_col_types = FALSE)
 core_list <- sort(unique(DNA_global$Number[!is.na(DNA_global$Number)]))
 
-message("✅ Data loaded and Age/Core columns verified.")
+message("Data loaded and Age/Core columns verified.")
 
 # =============================================================================
 # PART 2: FUNCTIONS
 # =============================================================================
 
-# --- A. Monte Carlo Simulation (The Stabilizer) ---
+# --- A. Monte Carlo Simulation  ---
 # We stabilize the formula by using Beta-Distributions (Priors) that prevent
 # unrealistic genome sizes for deep biosphere organisms.
 run_monte_carlo <- function(data, dna_col_name, organism_name, conversion_data, n_sims, 
@@ -330,17 +330,14 @@ for (core_id in core_list) {
   core_data <- DNA_global %>% filter(Number == core_id)
   names(core_data) <- names(core_data) %>% gsub("_Start_wt", "_DNA_weight", .) %>% gsub("_percentage", "", .)
   
-  if(nrow(core_data) == 0) next  # 如果没有数据，跳过这个 core
+  if(nrow(core_data) == 0) next  
   
-  # 再获取 Lake 名称
-  lake_name <- core_data$Lake[1]  # 获取 Lake 名称
-  lake_name_clean <- gsub("[^A-Za-z0-9]", "_", lake_name)  # 安全文件名
+  lake_name <- core_data$Lake[1]  
+  lake_name_clean <- gsub("[^A-Za-z0-9]", "_", lake_name)  
   
-  # 输出目录
   core_out_path <- file.path(PATH_OUTPUT_DIR, lake_name_clean)
   if(!dir.exists(core_out_path)) dir.create(core_out_path)
   
-  # MC 文件
   mc_file <- file.path(core_out_path, paste0("MC_Results_", lake_name_clean, ".csv"))
   
   if(nrow(core_data) > 0) {
@@ -410,7 +407,7 @@ for (core_id in core_list) {
       plot_list_cores[[as.character(core_id)]] <- p_corr
     
       df_habitat <- df_taxa %>%
-        filter(Core == core_id) %>%  # 仅取当前核心
+        filter(Core == core_id) %>%  
         mutate(
           Habitat = case_when(
             grepl("aquatic|algae", Type, ignore.case = TRUE) ~ "Aquatic",
@@ -445,7 +442,6 @@ for (core_id in core_list) {
         ungroup()
       
       
-      # 绘图
       p_habitat <- ggplot(df_habitat_sum,
                           aes(x = Age_Group,
                               y = Med_ral,
@@ -470,11 +466,8 @@ for (core_id in core_list) {
         width = 10, height = 6, dpi = 300
       )
       
-      # 保存到列表
       if (!exists("p_habitat_list")) p_habitat_list <- list()
       p_habitat_list[[as.character(core_id)]] <- p_habitat
-      
-      
       
       }
   }
@@ -486,9 +479,6 @@ for (core_id in core_list) {
 # 4. MERGE MONTE CARLO BIOMASS RESULTS WITH ORIGINAL DATA
 # =============================================================================
 
-# =============================================================================
-# 4. FINAL MERGE: CREATE mc_result
-# =============================================================================
 Processed_DNA <- read_csv(PATH_DATA_INPUT, show_col_types = FALSE)
 
 mc_all <- bind_rows(all_cores_biomass)
@@ -496,10 +486,9 @@ mc_all <- bind_rows(all_cores_biomass)
 
 mc_all <- mc_all %>%
   mutate(
-    Number = Core # 四舍五入 Age
+    Number = Core 
   )
 
-# 转为宽表，每个 Type+stat 是独立列
 mc_wide <- mc_all %>%
   pivot_longer(
     cols = c(mean_biomass, median_biomass, q1_biomass, q3_biomass),
@@ -570,7 +559,6 @@ if(length(p_habitat_list) > 0) {
         plot.title = element_text(size = 18, face = "bold"))
     )
   
-  # 保存
   ggsave(file.path(PATH_OUTPUT_DIR, "All_Cores_Habitat_Grid.png"), final_habitat_grid, width = 18, height = 12, dpi = 300)
 }
 
