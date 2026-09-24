@@ -1,0 +1,99 @@
+Assembly Accession	Assembly-unit name	Chromosome name	GC Count	GC Percent	GenBank seq accession	Molecule type	Ordering	RefSeq seq accession	Role	Seq length	UCSC style name	Unlocalized Count	Sequence name
+GCA_005239225.2	Primary Assembly	1	18186943	33	CM100070.1	Chromosome		NC_133284.1	assembled-molecule	54846348			Chr01
+GCA_005239225.2	Primary Assembly	2	6794697	33	CM100071.1	Chromosome		NC_133285.1	assembled-molecule	20523245			Chr02
+GCA_005239225.2	Primary Assembly	3	7671324	34	CM100072.1	Chromosome		NC_133286.1	assembled-molecule	22734209			Chr03
+GCA_005239225.2	Primary Assembly	4	7778576	33.5	CM100073.1	Chromosome		NC_133287.1	assembled-molecule	23233841			Chr04
+GCA_005239225.2	Primary Assembly	5	7744017	33.5	CM100074.1	Chromosome		NC_133288.1	assembled-molecule	23208828			Chr05
+GCA_005239225.2	Primary Assembly	6	8482090	33	CM100075.1	Chromosome		NC_133289.1	assembled-molecule	25637016			Chr06
+GCA_005239225.2	Primary Assembly	7	4819443	33	CM100076.1	Chromosome		NC_133290.1	assembled-molecule	14533931			Chr07
+GCA_005239225.2	Primary Assembly	8	6977107	34.5	CM100077.1	Chromosome		NC_133291.1	assembled-molecule	20300730			Chr08
+GCA_005239225.2	Primary Assembly	9	4522222	34.5	CM100078.1	Chromosome		NC_133292.1	assembled-molecule	13159515			Chr09
+GCA_005239225.2	Primary Assembly	10	7522003	34	CM100079.1	Chromosome		NC_133293.1	assembled-molecule	22002062			Chr10
+GCA_005239225.2	Primary Assembly	11	7952663	34	CM100080.1	Chromosome		NC_133294.1	assembled-molecule	23474536			Chr11
+GCA_005239225.2	Primary Assembly	12	5127495	33.5	CM100081.1	Chromosome		NC_133295.1	assembled-molecule	15352202			Chr12
+GCA_005239225.2	Primary Assembly	13	5587171	33.5	CM100082.1	Chromosome		NC_133296.1	assembled-molecule	16711252			Chr13
+GCA_005239225.2	Primary Assembly	14	8086314	34	CM100083.1	Chromosome		NC_133297.1	assembled-molecule	23661379			Chr14
+GCA_005239225.2	Primary Assembly	15	5564329	34	CM100084.1	Chromosome		NC_133298.1	assembled-molecule	16454697			Chr15
+GCA_005239225.2	Primary Assembly	16	5347178	33.5	CM100085.1	Chromosome		NC_133299.1	assembled-molecule	16080612			Chr16
+GCA_005239225.2	Primary Assembly	17	7313756	34	CM100086.1	Chromosome		NC_133300.1	assembled-molecule	21620243			Chr17
+GCA_005239225.2	Primary Assembly	18	5347720	33	CM100087.1	Chromosome		NC_133301.1	assembled-molecule	16135015			Chr18
+GCA_005239225.2	Primary Assembly	19	7802631	34	CM100088.1	Chromosome		NC_133302.1	assembled-molecule	23009717			Chr19
+GCA_005239225.2	Primary Assembly	Un			RCHU02000020.1	Chromosome		NW_027340114.1	unplaced-scaffold	42980			scaf100
+GCA_005239225.2	Primary Assembly	Un			RCHU02000021.1	Chromosome		NW_027340115.1	unplaced-scaffold	44980			scaf101
+GCA_005239225.2	Primary Assembly	Un			RCHU02000022.1	Chromosome		NW_027340116.1	unplaced-scaffold	34998			scaf103
+GCA_005239225.2	Primary Assembly	Un			RCHU02000023.1	Chromosome		NW_027340117.1	unplaced-scaffold	45997			scaf106
+GCA_005239225.2	Primary Assembly	Un			RCHU02000024.1	Chromosome		NW_027340118.1	unplaced-scaffold	29844			scaf112
+GCA_005239225.2	Primary Assembly	Un			RCHU02000025.1	Chromosome		NW_027340119.1	unplaced-scaffold	29803			scaf113
+GCA_005239225.2	Primary Assembly	Un			RCHU02000026.1	Chromosome		NW_027340120.1	unplaced-scaffold	48608			scaf114
+GCA_005239225.2	Primary Assembly	Un			RCHU02000027.1	Chromosome		NW_027340121.1	unplaced-scaffold	28400			scaf116
+GCA_005239225.2	Primary Assembly	Un			RCHU02000028.1	Chromosome		NW_027340122.1	unplaced-scaffold	27998			scaf117
+GCA_005239225.2	Primary Assembly	Un			RCHU02000029.1	Chromosome		NW_027340123.1	unplaced-scaffold	27981			scaf118
+GCA_005239225.2	Primary Assembly	Un			RCHU02000030.1	Chromosome		NW_027340124.1	unplaced-scaffold	26999			scaf119
+GCA_005239225.2	Primary Assembly	Un			RCHU02000031.1	Chromosome		NW_027340125.1	unplaced-scaffold	26556			scaf120
+GCA_005239225.2	Primary Assembly	Un			RCHU02000032.1	Chromosome		NW_027340126.1	unplaced-scaffold	30900			scaf122
+GCA_005239225.2	Primary Assembly	Un			RCHU02000033.1	Chromosome		NW_027340127.1	unplaced-scaffold	30020			scaf123
+GCA_005239225.2	Primary Assembly	Un			RCHU02000034.1	Chromosome		NW_027340128.1	unplaced-scaffold	25911			scaf124
+GCA_005239225.2	Primary Assembly	Un			RCHU02000035.1	Chromosome		NW_027340129.1	unplaced-scaffold	36991			scaf127
+GCA_005239225.2	Primary Assembly	Un			RCHU02000036.1	Chromosome		NW_027340130.1	unplaced-scaffold	25115			scaf129
+GCA_005239225.2	Primary Assembly	Un			RCHU02000037.1	Chromosome		NW_027340131.1	unplaced-scaffold	1744723			scaf18
+GCA_005239225.2	Primary Assembly	Un			RCHU02000038.1	Chromosome		NW_027340132.1	unplaced-scaffold	41999			scaf243
+GCA_005239225.2	Primary Assembly	Un			RCHU02000039.1	Chromosome		NW_027340133.1	unplaced-scaffold	23109			scaf247
+GCA_005239225.2	Primary Assembly	Un			RCHU02000040.1	Chromosome		NW_027340134.1	unplaced-scaffold	23005			scaf248
+GCA_005239225.2	Primary Assembly	Un			RCHU02000041.1	Chromosome		NW_027340135.1	unplaced-scaffold	22940			scaf249
+GCA_005239225.2	Primary Assembly	Un			RCHU02000042.1	Chromosome		NW_027340136.1	unplaced-scaffold	22672			scaf250
+GCA_005239225.2	Primary Assembly	Un			RCHU02000043.1	Chromosome		NW_027340137.1	unplaced-scaffold	22645			scaf251
+GCA_005239225.2	Primary Assembly	Un			RCHU02000044.1	Chromosome		NW_027340138.1	unplaced-scaffold	34959			scaf252
+GCA_005239225.2	Primary Assembly	Un			RCHU02000045.1	Chromosome		NW_027340139.1	unplaced-scaffold	22026			scaf253
+GCA_005239225.2	Primary Assembly	Un			RCHU02000046.1	Chromosome		NW_027340140.1	unplaced-scaffold	22007			scaf254
+GCA_005239225.2	Primary Assembly	Un			RCHU02000047.1	Chromosome		NW_027340141.1	unplaced-scaffold	21981			scaf255
+GCA_005239225.2	Primary Assembly	Un			RCHU02000048.1	Chromosome		NW_027340142.1	unplaced-scaffold	22577			scaf266
+GCA_005239225.2	Primary Assembly	Un			RCHU02000049.1	Chromosome		NW_027340143.1	unplaced-scaffold	37995			scaf267
+GCA_005239225.2	Primary Assembly	Un			RCHU02000050.1	Chromosome		NW_027340144.1	unplaced-scaffold	19241			scaf268
+GCA_005239225.2	Primary Assembly	Un			RCHU02000051.1	Chromosome		NW_027340145.1	unplaced-scaffold	24000			scaf272
+GCA_005239225.2	Primary Assembly	Un			RCHU02000052.1	Chromosome		NW_027340146.1	unplaced-scaffold	18911			scaf273
+GCA_005239225.2	Primary Assembly	Un			RCHU02000053.1	Chromosome		NW_027340147.1	unplaced-scaffold	29947			scaf280
+GCA_005239225.2	Primary Assembly	Un			RCHU02000054.1	Chromosome		NW_027340148.1	unplaced-scaffold	27275			scaf282
+GCA_005239225.2	Primary Assembly	Un			RCHU02000055.1	Chromosome		NW_027340149.1	unplaced-scaffold	32210			scaf283
+GCA_005239225.2	Primary Assembly	Un			RCHU02000056.1	Chromosome		NW_027340150.1	unplaced-scaffold	40150			scaf285
+GCA_005239225.2	Primary Assembly	Un			RCHU02000057.1	Chromosome		NW_027340151.1	unplaced-scaffold	16978			scaf286
+GCA_005239225.2	Primary Assembly	Un			RCHU02000058.1	Chromosome		NW_027340152.1	unplaced-scaffold	16782			scaf287
+GCA_005239225.2	Primary Assembly	Un			RCHU02000059.1	Chromosome		NW_027340153.1	unplaced-scaffold	15790			scaf293
+GCA_005239225.2	Primary Assembly	Un			RCHU02000060.1	Chromosome		NW_027340154.1	unplaced-scaffold	15502			scaf294
+GCA_005239225.2	Primary Assembly	Un			RCHU02000061.1	Chromosome		NW_027340155.1	unplaced-scaffold	15438			scaf295
+GCA_005239225.2	Primary Assembly	Un			RCHU02000062.1	Chromosome		NW_027340156.1	unplaced-scaffold	14985			scaf297
+GCA_005239225.2	Primary Assembly	Un			RCHU02000063.1	Chromosome		NW_027340157.1	unplaced-scaffold	26905			scaf299
+GCA_005239225.2	Primary Assembly	Un			RCHU02000064.1	Chromosome		NW_027340158.1	unplaced-scaffold	14744			scaf301
+GCA_005239225.2	Primary Assembly	Un			RCHU02000065.1	Chromosome		NW_027340159.1	unplaced-scaffold	30981			scaf308
+GCA_005239225.2	Primary Assembly	Un			RCHU02000066.1	Chromosome		NW_027340160.1	unplaced-scaffold	13999			scaf309
+GCA_005239225.2	Primary Assembly	Un			RCHU02000067.1	Chromosome		NW_027340161.1	unplaced-scaffold	13549			scaf312
+GCA_005239225.2	Primary Assembly	Un			RCHU02000068.1	Chromosome		NW_027340162.1	unplaced-scaffold	21001			scaf315
+GCA_005239225.2	Primary Assembly	Un			RCHU02000069.1	Chromosome		NW_027340163.1	unplaced-scaffold	13004			scaf316
+GCA_005239225.2	Primary Assembly	Un			RCHU02000070.1	Chromosome		NW_027340164.1	unplaced-scaffold	24139			scaf321
+GCA_005239225.2	Primary Assembly	Un			RCHU02000071.1	Chromosome		NW_027340165.1	unplaced-scaffold	16841			scaf323
+GCA_005239225.2	Primary Assembly	Un			RCHU02000072.1	Chromosome		NW_027340166.1	unplaced-scaffold	12519			scaf324
+GCA_005239225.2	Primary Assembly	Un			RCHU02000073.1	Chromosome		NW_027340167.1	unplaced-scaffold	11998			scaf330
+GCA_005239225.2	Primary Assembly	Un			RCHU02000074.1	Chromosome		NW_027340168.1	unplaced-scaffold	11988			scaf331
+GCA_005239225.2	Primary Assembly	Un			RCHU02000075.1	Chromosome		NW_027340169.1	unplaced-scaffold	11747			scaf335
+GCA_005239225.2	Primary Assembly	Un			RCHU02000076.1	Chromosome		NW_027340170.1	unplaced-scaffold	23605			scaf337
+GCA_005239225.2	Primary Assembly	Un			RCHU02000077.1	Chromosome		NW_027340171.1	unplaced-scaffold	11322			scaf341
+GCA_005239225.2	Primary Assembly	Un			RCHU02000078.1	Chromosome		NW_027340172.1	unplaced-scaffold	21002			scaf343
+GCA_005239225.2	Primary Assembly	Un			RCHU02000079.1	Chromosome		NW_027340173.1	unplaced-scaffold	10992			scaf347
+GCA_005239225.2	Primary Assembly	Un			RCHU02000080.1	Chromosome		NW_027340174.1	unplaced-scaffold	9998			scaf358
+GCA_005239225.2	Primary Assembly	Un			RCHU02000081.1	Chromosome		NW_027340175.1	unplaced-scaffold	9008			scaf367
+GCA_005239225.2	Primary Assembly	Un			RCHU02000082.1	Chromosome		NW_027340176.1	unplaced-scaffold	8360			scaf376
+GCA_005239225.2	Primary Assembly	Un			RCHU02000083.1	Chromosome		NW_027340177.1	unplaced-scaffold	15768			scaf384
+GCA_005239225.2	Primary Assembly	Un			RCHU02000084.1	Chromosome		NW_027340178.1	unplaced-scaffold	13882			scaf391
+GCA_005239225.2	Primary Assembly	Un			RCHU02000085.1	Chromosome		NW_027340179.1	unplaced-scaffold	6018			scaf434
+GCA_005239225.2	Primary Assembly	Un			RCHU02000086.1	Chromosome		NW_027340180.1	unplaced-scaffold	5543			scaf453
+GCA_005239225.2	Primary Assembly	Un			RCHU02000087.1	Chromosome		NW_027340181.1	unplaced-scaffold	67893			scaf45
+GCA_005239225.2	Primary Assembly	Un			RCHU02000088.1	Chromosome		NW_027340182.1	unplaced-scaffold	5012			scaf476
+GCA_005239225.2	Primary Assembly	Un			RCHU02000089.1	Chromosome		NW_027340183.1	unplaced-scaffold	4992			scaf482
+GCA_005239225.2	Primary Assembly	Un			RCHU02000090.1	Chromosome		NW_027340184.1	unplaced-scaffold	9010			scaf496
+GCA_005239225.2	Primary Assembly	Un			RCHU02000091.1	Chromosome		NW_027340185.1	unplaced-scaffold	72920			scaf49
+GCA_005239225.2	Primary Assembly	Un			RCHU02000092.1	Chromosome		NW_027340186.1	unplaced-scaffold	52248			scaf50
+GCA_005239225.2	Primary Assembly	Un			RCHU02000093.1	Chromosome		NW_027340187.1	unplaced-scaffold	75995			scaf92
+GCA_005239225.2	Primary Assembly	Un			RCHU02000094.1	Chromosome		NW_027340188.1	unplaced-scaffold	45075			scaf96
+GCA_005239225.2	Primary Assembly	Un			RCHU02000095.1	Chromosome		NW_027340189.1	unplaced-scaffold	37272			scaf97
+GCA_005239225.2	Primary Assembly	Un			RCHU02000096.1	Chromosome		NW_027340190.1	unplaced-scaffold	37065			scaf98
+GCA_005239225.2	Primary Assembly	Un			RCHU02000097.1	Chromosome		NW_027340191.1	unplaced-scaffold	35969			scaf99
+GCA_005239225.2	non-nuclear	MT	385882	45	CM100101.1	Mitochondrion			assembled-molecule	861827			mit0

@@ -1,0 +1,86 @@
+Assembly Accession	Assembly-unit name	Chromosome name	GC Count	GC Percent	GenBank seq accession	Molecule type	Ordering	RefSeq seq accession	Role	Seq length	UCSC style name	Unlocalized Count	Sequence name
+GCA_040893245.2	Primary Assembly	1	76403662	42	CM081674.1	Chromosome			assembled-molecule	182608553			1
+GCA_040893245.2	Primary Assembly	2	74560548	41.5	CM081675.1	Chromosome			assembled-molecule	178840976			2
+GCA_040893245.2	Primary Assembly	3	71933922	42	CM081676.1	Chromosome			assembled-molecule	170765399			3
+GCA_040893245.2	Primary Assembly	4	70783530	43	CM081677.1	Chromosome			assembled-molecule	164945228		1	4
+GCA_040893245.2	Primary Assembly	5	73412532	45.5	CM081678.1	Chromosome			assembled-molecule	160934890			5
+GCA_040893245.2	Primary Assembly	6	57918266	42	CM081679.1	Chromosome			assembled-molecule	138038782			6
+GCA_040893245.2	Primary Assembly	7	58587386	43.5	CM081680.1	Chromosome			assembled-molecule	134401410			7
+GCA_040893245.2	Primary Assembly	8	55722542	44.5	CM081681.1	Chromosome			assembled-molecule	125755317			8
+GCA_040893245.2	Primary Assembly	9	57584754	46	CM081682.1	Chromosome			assembled-molecule	125741797			9
+GCA_040893245.2	Primary Assembly	10	47328516	41	CM081683.1	Chromosome			assembled-molecule	115962950			10
+GCA_040893245.2	Primary Assembly	11	48347934	44.5	CM081684.1	Chromosome			assembled-molecule	108133669			11
+GCA_040893245.2	Primary Assembly	12	46820663	44	CM081685.1	Chromosome			assembled-molecule	106721022			12
+GCA_040893245.2	Primary Assembly	13	44065757	44	CM081686.1	Chromosome			assembled-molecule	100667858			13
+GCA_040893245.2	Primary Assembly	14	43522323	44	CM081687.1	Chromosome			assembled-molecule	99141757			14
+GCA_040893245.2	Primary Assembly	15	41057542	42	CM081688.1	Chromosome			assembled-molecule	97426325			15
+GCA_040893245.2	Primary Assembly	16	38973291	42	CM081689.1	Chromosome			assembled-molecule	92510998			16
+GCA_040893245.2	Primary Assembly	17	38415072	45.5	CM081690.1	Chromosome			assembled-molecule	84324624			17
+GCA_040893245.2	Primary Assembly	18	33970141	49	CM081691.1	Chromosome			assembled-molecule	69582148			18
+GCA_040893245.2	Primary Assembly	19	31257204	45.5	CM081692.1	Chromosome			assembled-molecule	68953458			19
+GCA_040893245.2	Primary Assembly	20	30553083	49	CM081693.1	Chromosome			assembled-molecule	62379178			20
+GCA_040893245.2	Primary Assembly	21	25939855	49.5	CM081694.1	Chromosome			assembled-molecule	52324704			21
+GCA_040893245.2	Primary Assembly	22	20209057	47	CM081695.1	Chromosome			assembled-molecule	42917363			22
+GCA_040893245.2	Primary Assembly	23	17620341	50	CM081696.1	Chromosome			assembled-molecule	35094755			23
+GCA_040893245.2	Primary Assembly	X	56783974	40.5	CM081697.1	Chromosome			assembled-molecule	139721860			X
+GCA_040893245.2	Primary Assembly	Y	10212162	41	CM081698.1	Chromosome			assembled-molecule	24927870			Y
+GCA_040893245.2	Primary Assembly	4			JBEDNT010000005.1	Chromosome			unlocalized-scaffold	1279896		1	4_unloc_1
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000027.1	Chromosome			unplaced-scaffold	161149			HAP1_SCAFFOLD_63
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000028.1	Chromosome			unplaced-scaffold	126535			HAP1_SCAFFOLD_68
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000029.1	Chromosome			unplaced-scaffold	89847			HAP1_SCAFFOLD_85
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000030.1	Chromosome			unplaced-scaffold	91292			HAP1_SCAFFOLD_84
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000031.1	Chromosome			unplaced-scaffold	102870			HAP1_SCAFFOLD_74
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000032.1	Chromosome			unplaced-scaffold	78208			HAP1_SCAFFOLD_92
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000033.1	Chromosome			unplaced-scaffold	101248			HAP1_SCAFFOLD_75
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000034.1	Chromosome			unplaced-scaffold	78615			HAP1_SCAFFOLD_91
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000035.1	Chromosome			unplaced-scaffold	194430			HAP1_SCAFFOLD_58
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000036.1	Chromosome			unplaced-scaffold	259359			HAP1_SCAFFOLD_53
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000037.1	Chromosome			unplaced-scaffold	79533			HAP1_SCAFFOLD_90
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000038.1	Chromosome			unplaced-scaffold	1213187			HAP1_SCAFFOLD_32
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000039.1	Chromosome			unplaced-scaffold	97682			HAP1_SCAFFOLD_76
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000040.1	Chromosome			unplaced-scaffold	166830			HAP1_SCAFFOLD_62
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000041.1	Chromosome			unplaced-scaffold	288015			HAP1_SCAFFOLD_50
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000042.1	Chromosome			unplaced-scaffold	85190			HAP1_SCAFFOLD_86
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000043.1	Chromosome			unplaced-scaffold	266359			HAP1_SCAFFOLD_51
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000044.1	Chromosome			unplaced-scaffold	10771			HAP1_SCAFFOLD_103
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000045.1	Chromosome			unplaced-scaffold	66153			HAP1_SCAFFOLD_98
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000046.1	Chromosome			unplaced-scaffold	72809			HAP1_SCAFFOLD_93
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000047.1	Chromosome			unplaced-scaffold	264890			HAP1_SCAFFOLD_52
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000048.1	Chromosome			unplaced-scaffold	94617			HAP1_SCAFFOLD_79
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000049.1	Chromosome			unplaced-scaffold	83033			HAP1_SCAFFOLD_87
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000050.1	Chromosome			unplaced-scaffold	177758			HAP1_SCAFFOLD_60
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000051.1	Chromosome			unplaced-scaffold	1979800			HAP1_SCAFFOLD_28
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000052.1	Chromosome			unplaced-scaffold	853685			HAP1_SCAFFOLD_38
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000053.1	Chromosome			unplaced-scaffold	97024			HAP1_SCAFFOLD_77
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000054.1	Chromosome			unplaced-scaffold	58320			HAP1_SCAFFOLD_102
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000055.1	Chromosome			unplaced-scaffold	60988			HAP1_SCAFFOLD_101
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000056.1	Chromosome			unplaced-scaffold	79731			HAP1_SCAFFOLD_89
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000057.1	Chromosome			unplaced-scaffold	176825			HAP1_SCAFFOLD_61
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000058.1	Chromosome			unplaced-scaffold	152495			HAP1_SCAFFOLD_64
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000059.1	Chromosome			unplaced-scaffold	145411			HAP1_SCAFFOLD_65
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000060.1	Chromosome			unplaced-scaffold	68148			HAP1_SCAFFOLD_96
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000061.1	Chromosome			unplaced-scaffold	80782			HAP1_SCAFFOLD_88
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000062.1	Chromosome			unplaced-scaffold	92983			HAP1_SCAFFOLD_83
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000063.1	Chromosome			unplaced-scaffold	347499			HAP1_SCAFFOLD_46
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000064.1	Chromosome			unplaced-scaffold	94820			HAP1_SCAFFOLD_78
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000065.1	Chromosome			unplaced-scaffold	116835			HAP1_SCAFFOLD_73
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000066.1	Chromosome			unplaced-scaffold	257193			HAP1_SCAFFOLD_54
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000067.1	Chromosome			unplaced-scaffold	63642			HAP1_SCAFFOLD_99
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000068.1	Chromosome			unplaced-scaffold	252512			HAP1_SCAFFOLD_55
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000069.1	Chromosome			unplaced-scaffold	67146			HAP1_SCAFFOLD_97
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000070.1	Chromosome			unplaced-scaffold	219849			HAP1_SCAFFOLD_57
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000071.1	Chromosome			unplaced-scaffold	93254			HAP1_SCAFFOLD_82
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000072.1	Chromosome			unplaced-scaffold	120076			HAP1_SCAFFOLD_72
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000073.1	Chromosome			unplaced-scaffold	185405			HAP1_SCAFFOLD_59
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000074.1	Chromosome			unplaced-scaffold	68653			HAP1_SCAFFOLD_95
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000075.1	Chromosome			unplaced-scaffold	139083			HAP1_SCAFFOLD_66
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000076.1	Chromosome			unplaced-scaffold	62817			HAP1_SCAFFOLD_100
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000077.1	Chromosome			unplaced-scaffold	71622			HAP1_SCAFFOLD_94
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000078.1	Chromosome			unplaced-scaffold	94131			HAP1_SCAFFOLD_80
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000079.1	Chromosome			unplaced-scaffold	137599			HAP1_SCAFFOLD_67
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000080.1	Chromosome			unplaced-scaffold	120743			HAP1_SCAFFOLD_71
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000081.1	Chromosome			unplaced-scaffold	93676			HAP1_SCAFFOLD_81
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000082.1	Chromosome			unplaced-scaffold	126120			HAP1_SCAFFOLD_69
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000083.1	Chromosome			unplaced-scaffold	231753			HAP1_SCAFFOLD_56
+GCA_040893245.2	Primary Assembly	Un			JBEDNT010000084.1	Chromosome			unplaced-scaffold	124085			HAP1_SCAFFOLD_70
+GCA_040893245.2	non-nuclear	MT	6791	39	OR915850.1	Mitochondrion			assembled-molecule	17482			MT
