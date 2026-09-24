@@ -12,7 +12,7 @@ library(vegan)
 # ============================================================
 
 data <- read.csv(
-  "data/Comibne_plant_percentage.csv",
+  "data/Combine_plant_percentage.csv",
   header = TRUE
 )
 
