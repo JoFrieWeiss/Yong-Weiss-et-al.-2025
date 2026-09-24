@@ -19,7 +19,7 @@ All figures use the same processed dataset:
 
 ```text
 data/Processed_DNA_with_MC_biomass_final.csv
-data/Pollendata/Algae pecentage csv.csv
+data/Pollendata/Algae_percentage.csv
 ```
 
 ## Requirements
