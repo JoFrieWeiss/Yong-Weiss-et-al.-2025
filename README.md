@@ -1,9 +1,9 @@
-# Yong & Weiß et al., 2026
+# Taxon-resolved sources of organic carbon preserved in lake sediments using the sedaDNA GenC pipeline
 
 This repository contains all scripts and pipelines for the analyses presented in:
 ---
 Zijuan Yong<sup>+</sup>, Josefine Friederike Weiß<sup>+</sup>, Kathleen R. Stoof-Leichsenring, Sisi Liu, Andrei Andreev, Ulrike Herzschuh<sup>*</sup> (2026): 
-Quantitative contribution of major organism groups to lake organic carbon burial since the last glacial inferred from sedimentary ancient DNA
+Taxon-resolved sources of organic carbon preserved in lake sediments using the sedaDNA GenC pipeline
 
 
 ## Important prerequisites
