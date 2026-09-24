@@ -33,8 +33,8 @@ The reconstructed OC for taxon $i$ is calculated through the global equation:
 $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [DNA]_{p} \cdot \bar{L} \cdot 10^{-3} \right) \cdot \text{CDF} }{ \text{CCF} \cdot (M_{raw} \cdot (1 - \theta)) } \cdot R_i \cdot \frac{ C_{i,s} \cdot S_i \cdot E }{ D_{i,s} } \right]$$
 
 **Variables and Units:**
-* $\hat{B}_{i}$: Median reconstructed OC ($g_{C} \cdot g_{sed}^{-1}$)
-* $\bar{L}$: Arithmetic mean read length of the sample (bp)
+* $\hat{B}_{i}$: Median reconstructed OC ($g_{\text{C}} \cdot g_{\text{sed}}^{-1}$)
+* * $\bar{L}$: Arithmetic mean read length of the sample (bp)
 * $[DNA]_{p}$: DNA concentration in the sequencing pool ($ng \cdot \mu l^{-1}$)
 * $R_i$: Relative read proportion (%)
 * $C_{i,s}$: Simulated carbon mass per cell via Beta-Priors ($g_{C} \cdot cell^{-1}$)
