@@ -31,6 +31,8 @@ Make sure to complete this step to generate the necessary input files used in th
 3. Run the [`pre_genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/Read%20length) to extract the read length.
 4. Use [`Data_Mining/DNA_C_value/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Data_Mining/DNA_C_value) to generate lists of DNA weight per cell per organism.
 5. Run the [`genC_pipeline/`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline) to estimate group-specific DNA-based biomass and carbon.
+6. For further statistics please run [`Statistics`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Graphics%20&%20Statistics).
+7. To reconstruct all figures go to [`Figures`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/Figures).
 
 ---
 
