@@ -42,7 +42,7 @@ library(patchwork)
 # -----------------------------------------------------------------------------
 
 PATH_DATA_INPUT <- "data/Processed_DNA_with_MC_biomass_final.csv"
-PATH_POLLEN <- "data/Pollendata/Algae pecentage csv.csv"
+PATH_POLLEN <- "data/Algae_percentage.csv"
 PATH_OUTPUT_DIR <- "figures"
 
 if (!dir.exists(PATH_OUTPUT_DIR)) {
