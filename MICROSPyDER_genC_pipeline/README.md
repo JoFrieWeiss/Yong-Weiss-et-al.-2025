@@ -6,10 +6,10 @@ This repository contains the integrated pipeline for ecological habitat classifi
 ---
 
 ## 1. MICROSPyDER: Ecological Source Tracking
-The MICROSPyDER module classifies the ecological origin of microbial taxa by calculating the **Taxon-specific Affinity Score (TAS)**. This score contrasts the frequency of a taxon $i$ in terrestrial vs. aquatic environments based on global MicrobeAtlas data.
+The MICROSPyDER module classifies the ecological origin of microbial taxa by calculating the **Habitat Affinity Score (HAS)**. This score contrasts the frequency of a taxon $i$ in terrestrial vs. aquatic environments based on global MicrobeAtlas data.
 
-### TAS Formula
-The TAS score ($T_i$) for a specific taxon $i$ is defined as:
+### HAS Formula
+The HAS score ($T_i$) for a specific taxon $i$ is defined as:
 
 $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_{aqua}} V_{i,k}}{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} + \sum_{k \in \mathcal{H}_{aqua}} V_{i,k}}$$
 
@@ -26,8 +26,8 @@ $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_
 
 ---
 
-## 2. genC: Biomass Reconstruction
-The genC pipeline reconstructs the physical total biomass $\hat{B}_i$ using a stochastic **Monte Carlo Integration** ($N=10,000$). It transforms sequencing read counts into carbon mass per gram of sediment.
+## 2. genC: OC Reconstruction
+The genC pipeline reconstructs the physical total OC $\hat{B}_i$ using a stochastic **Monte Carlo Integration** ($N=10,000$). It transforms sequencing read counts into organic carbon mass per gram of sediment.
 
 ### Biomass Formula
 The reconstructed biomass for taxon $i$ is calculated through the global equation:
@@ -50,7 +50,7 @@ $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [D
 ---
 
 ## 3. Repository Structure
-* `/code/Part_1_MICROSCOPE.R`: Artifact filtering and TAS score calculation.
+* [`1. MICROSPyDER using HAS`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/1_v2_TAS_GenC_pipeline.R): Artifact filtering and HAS score calculation.
 * `/code/Part_2_Integration.R`: Merging sequencing metadata with taxonomic data.
 * `/code/Part_3_genC_Biomass.R`: Stochastic MC simulation and linear TOC-comparison plots.
 * `/data/`: Contains reference files (e.g., `values_per_cell_correct.csv`).
