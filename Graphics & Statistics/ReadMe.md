@@ -86,4 +86,4 @@ The datasets and R scripts required to reproduce the statistical analyses are pu
 The repository contains the analysis code together with the corresponding input datasets used for the GLMM and PCA analyses.
 
 
-For any questions regarding the code or the analysis, please contact Josefine Friederike Weiß at Josefine-Friederike.Weiss@awi.de
+For any questions regarding the code or the analysis, please contact Zijuan Yong at Zijuanyong@163.com.
