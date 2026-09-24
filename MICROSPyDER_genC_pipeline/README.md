@@ -50,10 +50,10 @@ $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [D
 ---
 
 ## 3. Repository Structure
-* [`1. MICROSPyDER using HAS`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/1_v2_TAS_GenC_pipeline.R): Artifact filtering and HAS score calculation.
-* `/code/Part_2_Integration.R`: Merging sequencing metadata with taxonomic data.
-* `/code/Part_3_genC_Biomass.R`: Stochastic MC simulation and linear TOC-comparison plots.
-* `/data/`: Contains reference files (e.g., `values_per_cell_correct.csv`).
+* [`1. MICROSPyDER using HAS`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/1_v2_TAS_GenC_pipeline.R): HAS score calculation.
+* [`2. Calculating DNA weight`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/2_v2_2_DNAweight_GenC.R): Merging sequencing metadata with taxonomic data to calculate DNA weight per taxonomic group.
+* [`3. Calculating OC`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/genC%20pipeline/3_v2_3_GenC.R): Stochastic MC simulation and linear TOC-comparison plots.
+* [`Data used`](https://github.com/JoFrieWeiss/Yong-Weiss-et-al.-2025/tree/main/MICROSPyDER_genC_pipeline/Data): Contains reference files (e.g., `values_per_cell_correct.csv`).
 
 ## 4. Usage
 1. Adjust the `base_dir` in all R-scripts to match your local path.
