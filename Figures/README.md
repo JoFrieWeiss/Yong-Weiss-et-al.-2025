@@ -57,4 +57,6 @@ Output figures are saved in:
 ```text
 figures
 ```
-
+## Notes
+The datasets and R scripts required to reproduce Figures 2–7 are publicly available in this repository.
+For questions regarding the code or analyses, please contact Zijuan Yong at Zijuanyong@163.com.
