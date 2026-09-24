@@ -1,7 +1,7 @@
 # MICROSPyDER & genC Pipeline
-**Microbial Community Source Tracking & Stochastic Biomass Reconstruction**
+**Microbial Community Source Tracking & Stochastic OC Reconstruction**
 
-This repository contains the integrated pipeline for ecological habitat classification (**MICROSPyDER**) and stochastic biomass reconstruction (**genC**). The model is specifically designed to handle environmental shotgun metagenomics data, accounting for laboratory biases and biological variability.
+This repository contains the integrated pipeline for ecological habitat classification (**MICROSPyDER**) and stochastic OC reconstruction (**genC**). The model is specifically designed to handle environmental shotgun metagenomics data, accounting for laboratory biases and biological variability.
 
 ---
 
@@ -29,13 +29,13 @@ $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_
 ## 2. genC: OC Reconstruction
 The genC pipeline reconstructs the physical total OC $\hat{B}_i$ using a stochastic **Monte Carlo Integration** ($N=10,000$). It transforms sequencing read counts into organic carbon mass per gram of sediment.
 
-### Biomass Formula
-The reconstructed biomass for taxon $i$ is calculated through the global equation:
+### OC Formula
+The reconstructed OC for taxon $i$ is calculated through the global equation:
 
 $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [DNA]_{p} \cdot \bar{L} \cdot 10^{-3} \right) \cdot \text{CDF} }{ \text{CCF} \cdot (M_{raw} \cdot (1 - \theta)) } \cdot R_i \cdot \frac{ C_{i,s} \cdot S_i \cdot E }{ D_{i,s} } \right]$$
 
 **Variables and Units:**
-* $\hat{B}_{i}$: Median reconstructed biomass ($g_{C} \cdot g_{sed}^{-1}$)
+* $\hat{B}_{i}$: Median reconstructed OC ($g_{C} \cdot g_{sed}^{-1}$)
 * $\bar{L}$: Arithmetic mean read length of the sample (bp)
 * $[DNA]_{p}$: DNA concentration in the sequencing pool ($ng \cdot \mu l^{-1}$)
 * $R_i$: Relative read proportion (%)
@@ -61,7 +61,7 @@ $$\hat{B}_{i} = \mathbb{M}_{s=1 \dots N} \left[ \frac{ \left( \text{MW} \cdot [D
 3. Ensure R packages `dplyr`, `ggplot2`, `patchwork`, and `sensitivity` are installed.
 
 ## 5. Sensitivity Analysis & Robustness
-To evaluate the reliability of the reconstructed biomass $\hat{B}_i$, the pipeline includes a global sensitivity analysis (Monte Carlo based). This identifies which input parameters (e.g., DNA concentration, C-value, or extraction efficiency) contribute most to the overall uncertainty.
+To evaluate the reliability of the reconstructed OC $\hat{B}_i$, the pipeline includes a global sensitivity analysis (Monte Carlo based). This identifies which input parameters (e.g., DNA concentration, C-value, or extraction efficiency) contribute most to the overall uncertainty.
 
 ### Mathematical Approach: OAT & Sobol Indices
 We use a combination of **One-at-a-Time (OAT)** variation and **Variance-based Sensitivity Analysis**. 
