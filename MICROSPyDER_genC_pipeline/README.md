@@ -18,10 +18,8 @@ $$T_i = \frac{\sum_{j \in \mathcal{H}_{terr}} V_{i,j} - \sum_{k \in \mathcal{H}_
 * $V_{i,k}$: Frequency of taxon $i$ in aquatic habitat $k$.
 * ℋ<sub>terr</sub> and ℋ<sub>aqua</sub>: Mathematical sets representing the collection of terrestrial and aquatic habitat descriptors.
         
-* **Artifact Filter:** A stringent filter is applied to remove recurrent database-specific biases: $|T_i - 0.3461187| > 10^{-7}$.
 **Key Parameters:**
 * $T_i \in [-1, 1]$
-* **Artifact Filter:** A stringent filter is applied to remove recurrent database-specific biases: $|T_i - 0.3461187| > 10^{-7}$
 * **Classification:** Specialists are identified at $|T_i| \geq 0.8$, while generalists cluster around $0.0$.
 
 ---
