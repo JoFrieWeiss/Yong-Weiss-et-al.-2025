@@ -40,7 +40,7 @@ if(file.exists(path_bac_master)) {
 }
 
 # ==============================================================================
-# 2. FUNCTION: CLEAN BUILD (WITH STRINGENT ARTIFACT/ZOMBIE FILTER)
+# 2. FUNCTION: CLEAN BUILD
 # ==============================================================================
 create_clean_master <- function(filepath, target_domain) {
   if(is.null(filepath) || !file.exists(filepath)) return(NULL)
@@ -78,7 +78,7 @@ create_clean_master <- function(filepath, target_domain) {
       tas_score = (Val_Terr - Val_Aqua) / Total_Sum
     ) %>%
     # --- ARTIFACT FILTER (Excluding specific artificial value 0.3461187) ---
-    filter(abs(tas_score - 0.3461187) > 0.0000001) %>%
+    # filter(abs(tas_score - 0.3461187) > 0.0000001) %>%
     
     mutate(
       habitat_label = case_when(
@@ -116,7 +116,7 @@ if(file.exists(path_arc_master)) {
 }
 
 # ==============================================================================
-# 4. FINAL PLOT (HISTOGRAM WITHOUT ARTIFACTS)
+# 4. FINAL PLOT
 # ==============================================================================
 message("--- GENERATING PLOT (ARTIFACT-FREE) ---")
 
@@ -180,7 +180,7 @@ if(nrow(plot_data) > 0) {
 }
 
 # ==============================================================================
-# 5. ECO-DRIVER PLOT (ARTIFACT-FREE)
+# 5. ECO-DRIVER PLOT
 # ==============================================================================
 message("--- GENERATING ECO-DRIVER PLOT ---")
 
